@@ -5,22 +5,23 @@ from abc import ABC, abstractmethod
 
 completion_tokens = prompt_tokens = 0
 
+
 class CompletionAPI(ABC):
     @abstractmethod
-    def get_completion(self, prompt: str, system_prompt: str, **kwargs) -> str | None:
+    def get_completion(self, prompt: str, system_prompt: str, **kwargs) -> str:
         "Abstract method to get the completion from a prompt"
         pass
 
 
 class OpenAICompletion(CompletionAPI):
-    def __init__(self, api_key: str) -> None:
+    def __init__(self, api_key: str):
         super().__init__()
         self.api_key = api_key
 
-    def get_completion(self, prompt:str, system_prompt: str, max_tokens: int=100, temperature: float=0.7, **kwargs) -> str | None:
+    def get_completion(self, prompt: str, system_prompt: str, max_tokens: int = 500, temperature: float = 0.7, **kwargs) -> str:
         global completion_tokens, prompt_tokens
 
-        messages: list[ChatCompletionMessageParam]=[
+        messages: list[ChatCompletionMessageParam] = [
             {"role": "system", "content": system_prompt},
             {
                 "role": "user",
@@ -34,6 +35,7 @@ class OpenAICompletion(CompletionAPI):
                 max_tokens=max_tokens,
                 temperature=temperature
             )
+            # print('testing_response', response.choices)
             completion_tokens += response.usage.completion_tokens
             prompt_tokens += response.usage.prompt_tokens
             return response.choices[0].message.content
