@@ -116,7 +116,9 @@ class SpanSet:
         doctext_offset_map = tokenized_doctext['offset_mapping']
         # print(doctext_offset_map.shape, tokenized_doctext['input_ids'].shape)
         # tokens = [self.tokenizer.convert_ids_to_tokens(id) for id in tokenized_doctext['input_ids'].tolist()]
-        print(doctext)
+        # print(doctext)
+        # print(doctext_offset_map[0, :25])
+
         span_masks = [self._get_span_mask(span, doctext_offset_map) for span in spans]
         # print(span_masks[0].shape)
         return tokenized_doctext['input_ids'], tokenized_doctext['attention_mask'], span_masks
@@ -124,7 +126,6 @@ class SpanSet:
     def _get_span_mask(self, s: DocumentSpan, offset_map: Tensor):
         if s.textual_span is None or s.char_start_idx is None:
             return torch.zeros((1, offset_map.shape[1]), dtype=torch.float)
-        # print(offset_map)
         # print(s.char_start_idx, s.char_end_idx)
         span_mask = torch.zeros((1, offset_map.shape[1]), dtype=torch.float)
         start_idx, end_idx = s.char_start_idx, s.char_end_idx + 1
@@ -133,6 +134,7 @@ class SpanSet:
             real_start_idx = i if token[0].item() == start_idx else real_start_idx
             real_end_idx = i if token[1].item() == end_idx else real_end_idx
         span_mask[0, real_start_idx: real_end_idx + 1] = 1
+        # print(span_mask[0, :25])
         # print('tokens:', span_mask.sum().item())
         return span_mask 
 
@@ -155,8 +157,8 @@ class AnnotationSpanSet(SpanSet):
 class LlmSpanSet(SpanSet):
     def __init__(self, d: Document, tokenizer: AutoTokenizer):
         super().__init__(d, tokenizer)
-        print(d.llm_roles[-1].textual_span)
-        _, _, self.llm_span_masks = self._set_inputs(d.llm_roles[-1].textual_span, d.llm_roles[:-1])
+        # print(d.llm_roles[-1].textual_span)
+        self.llm_ids, self.llm_attn_mask, self.llm_span_masks = self._set_inputs_llm(d.llm_roles[-1].textual_span, d.llm_roles[:-1])
         # print(self.llm_span_masks)
         self.mask_arg_map = self._set_mask_arg_map()
 
@@ -167,6 +169,37 @@ class LlmSpanSet(SpanSet):
             mask = self.llm_span_masks[idx]
             map.update({arg: mask})
         return map
+
+    def _set_inputs_llm(self, doctext: str, spans: List[DocumentSpan]) -> Tuple[Tensor, List[Tensor]]:
+        """
+        private method.
+        args:
+        d: Document, the original document that you wanna get the span masks out of.
+        tokenizer: tokenizer of your choice
+
+        Returns:
+        Tokenized original document as ids: Tensor
+        Span masks shaped as (num_of_spans, length_of_tokenized_document): Tensor
+        """
+        tokenized_doctext = self.tokenizer(text=doctext, return_tensors='pt', truncation=True, padding='max_length', return_offsets_mapping=True)
+        doctext_offset_map = tokenized_doctext['offset_mapping']
+        span_masks = [self._get_span_mask_llm(span, doctext_offset_map) for span in spans]
+        return tokenized_doctext['input_ids'], tokenized_doctext['attention_mask'], span_masks
+
+    def _get_span_mask_llm(self, s: DocumentSpan, offset_map: Tensor):
+        if s.textual_span is None or s.char_start_idx is None:
+            return torch.zeros((1, offset_map.shape[1]), dtype=torch.float)
+        # print(s.char_start_idx, s.char_end_idx)
+        span_mask = torch.zeros((1, offset_map.shape[1]), dtype=torch.float)
+        start_idx, end_idx = s.char_start_idx, s.char_end_idx
+        real_start_idx, real_end_idx = 0, 0
+        for i, token in enumerate(offset_map[0, :-1, :]): 
+            real_start_idx = i if token[0].item() == start_idx else real_start_idx
+            real_end_idx = i if token[1].item() == end_idx else real_end_idx
+        span_mask[0, real_start_idx: real_end_idx + 1] = 1
+        # print(span_mask[0, :25])
+        # print('tokens:', span_mask.sum().item())
+        return span_mask 
 
 
 def read_from_jsonl(file_path: str) -> List[Document]:

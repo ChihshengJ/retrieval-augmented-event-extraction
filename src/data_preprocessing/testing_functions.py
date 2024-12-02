@@ -14,7 +14,7 @@ llm_doc_path = '../data/llm_naive_prediction_for_all_documents_v2.json'
 write_llm_spans_into_docs(test_f, llm_doc_path)
 tokenizer = AutoTokenizer.from_pretrained('allenai/longformer-base-4096')
 
-for doc in test_f[:3]:
+for doc in test_f[100:102]:
     print(doc.doctext)
     llm_res = LlmSpanSet(doc, tokenizer)
 

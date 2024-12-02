@@ -7,6 +7,7 @@ from tqdm import tqdm
 import random
 import torch
 from torch.utils.data import Dataset
+import torch.nn.functional as F
 from torch import Tensor
 from torch.nn.utils.rnn import pad_sequence
 from transformers import AutoTokenizer
@@ -27,7 +28,7 @@ backend = CompletionAPIFactory.get_api(api_name='openai', api_key=OPENAI_API_KEY
 
 
 class SpanPairDataset(Dataset):
-    def __init__(self, documents: List[Document], tokenizer: AutoTokenizer, max_seq_length: int = 4096, save_dir: str = '../data/dataset'):
+    def __init__(self, documents: List[Document], tokenizer: AutoTokenizer, max_seq_length: int = 1024, save_dir: str = '../data/dataset'):
         self.samples = []
         self.tokenizer = tokenizer
         self.max_seq_length = max_seq_length
@@ -37,16 +38,12 @@ class SpanPairDataset(Dataset):
             self.samples = self.load_saved_samples(self.save_dir)
 
         for doc_id, doc in enumerate(tqdm(documents, desc='document processed'), start=len(self.samples)):
-            # human_span_set = AnnotationSpanSet(doc, tokenizer)
-            # doc_tokenized = human_span_set.ids.squeeze(0)
-            # doc_attn_mask = human_span_set.attention_mask.squeeze(0)
+            human_span_set = AnnotationSpanSet(doc, tokenizer)
             llm_span_set = LlmSpanSet(doc, tokenizer)
-            summary_tokenized = llm_span_set.ids.squeeze(0)
-            summary_attn_mask = llm_span_set.attention_mask.squeeze(0)
-
-            # print('annotation span masks:')
-            # print(human_span_set.mask_arg_map)
-            # print('llm span masks:')
+            doc_tokenized = human_span_set.ids
+            doc_attn_mask = human_span_set.attention_mask
+            summary_tokenized = llm_span_set.llm_ids
+            summary_attn_mask = llm_span_set.llm_attn_mask
             # print(llm_span_set.mask_arg_map)
             human_span_masks = []
             llm_span_masks = []
@@ -167,77 +164,78 @@ class SpanPairDataset(Dataset):
             if filename.endswith('.json'):
                 filepath = os.path.join(save_dir, filename)
                 with open(filepath, 'r') as f:
-                    saved_samples.append(json.load(f))
+                    sample = json.load(f)
+                    # Convert lists back to tensors
+                    sample['doc_tokens'] = torch.tensor(sample['doc_tokens'], dtype=torch.long)
+                    sample['doc_attn_mask'] = torch.tensor(sample['doc_attn_mask'], dtype=torch.long)
+                    sample['summary_tokens'] = torch.tensor(sample['summary_tokens'], dtype=torch.long)
+                    sample['summary_attn_mask'] = torch.tensor(sample['summary_attn_mask'], dtype=torch.long)
+                    sample['human_span_masks'] = [torch.tensor(mask, dtype=torch.float) for mask in sample['human_span_masks']]
+                    sample['llm_span_masks'] = [torch.tensor(mask, dtype=torch.float) for mask in sample['llm_span_masks']]
+                    sample['labels'] = torch.tensor(sample['labels'], dtype=torch.float)
+                    saved_samples.append(sample)
         return saved_samples
 
 
-def collate_fn(batch, tokenizer):
-    # Collect the documents and summaries
-    doc_tokens = [item['doc_tokens'] for item in batch]
-    doc_attn_masks = [item['doc_attn_mask'] for item in batch]
-    summary_tokens = [item['summary_tokens'] for item in batch]
-    summary_attn_masks = [item['summary_attn_mask'] for item in batch]
+def collate_fn(batch):
 
-    # Pad the documents and summaries
-    doc_tokens_padded = pad_sequence(doc_tokens, batch_first=True, padding_value=tokenizer.pad_token_id)
-    doc_attn_masks_padded = pad_sequence(doc_attn_masks, batch_first=True, padding_value=0)
-    summary_tokens_padded = pad_sequence(summary_tokens, batch_first=True, padding_value=tokenizer.pad_token_id)
-    summary_attn_masks_padded = pad_sequence(summary_attn_masks, batch_first=True, padding_value=0)
+    max_length = 1024
 
-    # Handle the span masks and labels
-    # Since the number of spans varies per sample, we'll flatten them across the batch
+    doc_tokens_list = []
+    doc_attn_masks_list = []
+    summary_tokens_list = []
+    summary_attn_masks_list = []
+
     human_span_masks_list = []
     llm_span_masks_list = []
     labels_list = []
-    doc_indices = []
-    summary_indices = []
+    sample_indices = []
 
-    for idx, item in enumerate(batch):
-        num_spans = len(item['human_span_masks'])
-        human_span_masks_list.extend(item['human_span_masks'])
-        llm_span_masks_list.extend(item['llm_span_masks'])
-        labels_list.extend(item['labels'])
-        # Keep track of which document and summary these spans belong to
-        doc_indices.extend([idx] * num_spans)
-        summary_indices.extend([idx] * num_spans)
+    for sample_idx, sample in enumerate(batch):
+        # Collect and squeeze the documents and summaries
+        doc_tokens = sample['doc_tokens'].squeeze(0)[:max_length]  # shape: (seq_length_doc,)
+        doc_attn_mask = sample['doc_attn_mask'].squeeze(0)[:max_length] 
+        summary_tokens = sample['summary_tokens'].squeeze(0)[:max_length] 
+        summary_attn_mask = sample['summary_attn_mask'].squeeze(0)[:max_length] 
 
-    # Pad the human and LLM span masks
-    max_doc_seq_length = doc_tokens_padded.size(1)
-    max_summary_seq_length = summary_tokens_padded.size(1)
+        doc_tokens_list.append(doc_tokens)
+        doc_attn_masks_list.append(doc_attn_mask)
+        summary_tokens_list.append(summary_tokens)
+        summary_attn_masks_list.append(summary_attn_mask)
 
-    # Pad human span masks
-    human_span_masks_padded = [torch.nn.functional.pad(
-        mask,
-        (0, max_doc_seq_length - mask.size(0)),
-        value=0
-    ) for mask in human_span_masks_list]
-    human_span_masks_tensor = torch.stack(human_span_masks_padded)
+        # For each span pair
+        for human_span_mask, llm_span_mask, label in zip(sample['human_span_masks'], sample['llm_span_masks'], sample['labels']):
+            human_span_masks_list.append(human_span_mask.squeeze(0)[:max_length])  # shape: (seq_length_doc,)
+            llm_span_masks_list.append(llm_span_mask.squeeze(0)[:max_length])      # shape: (seq_length_summary,)
+            labels_list.append(label)
+            sample_indices.append(sample_idx)
 
-    # Pad LLM span masks
-    llm_span_masks_padded = [torch.nn.functional.pad(
-        mask,
-        (0, max_summary_seq_length - mask.size(0)),
-        value=0
-    ) for mask in llm_span_masks_list]
-    llm_span_masks_tensor = torch.stack(llm_span_masks_padded)
+    # Pad sequences to maximum lengths
+    doc_tokens_tensor = pad_sequence(doc_tokens_list, batch_first=True, padding_value=0)
+    doc_attn_masks_tensor = pad_sequence(doc_attn_masks_list, batch_first=True, padding_value=0)
 
-    # Stack labels
-    labels_tensor = torch.stack(labels_list).float()
+    summary_tokens_tensor = pad_sequence(summary_tokens_list, batch_first=True, padding_value=0)
+    summary_attn_masks_tensor = pad_sequence(summary_attn_masks_list, batch_first=True, padding_value=0)
 
-    # Convert indices to tensors
-    doc_indices_tensor = torch.tensor(doc_indices, dtype=torch.long)
-    summary_indices_tensor = torch.tensor(summary_indices, dtype=torch.long)
+    human_span_masks_list = [mask for mask in human_span_masks_list]
+    human_span_masks_tensor = torch.stack(human_span_masks_list)
+
+    llm_span_masks_list = [mask for mask in llm_span_masks_list]
+    llm_span_masks_tensor = torch.stack(llm_span_masks_list)
+
+    # Convert labels and indices to tensors
+    labels_tensor = torch.tensor(labels_list, dtype=torch.float)
+    sample_indices_tensor = torch.tensor(sample_indices, dtype=torch.long)
 
     return {
-        'doc_tokens': doc_tokens_padded,
-        'doc_attn_mask': doc_attn_masks_padded,
-        'summary_tokens': summary_tokens_padded,
-        'summary_attn_mask': summary_attn_masks_padded,
+        'doc_tokens': doc_tokens_tensor,
+        'doc_attn_mask': doc_attn_masks_tensor,
+        'summary_tokens': summary_tokens_tensor,
+        'summary_attn_mask': summary_attn_masks_tensor,
         'human_span_masks': human_span_masks_tensor,
         'llm_span_masks': llm_span_masks_tensor,
         'labels': labels_tensor,
-        'doc_indices': doc_indices_tensor,
-        'summary_indices': summary_indices_tensor,
+        'sample_indices': sample_indices_tensor,
     }
 
 
@@ -258,19 +256,19 @@ def llm_training_data_dump(dataset: List[Document], model, back_end, max_tokens)
     print(f"Processed data saved to {output_file}")
 
 
-def main():
-    paths = ['../data/train.jsonl', '../data/dev.jsonl', '../data/test.jsonl']
-    famus = []
-    for path in paths:
-        famus.extend(read_from_jsonl(path))
-    print(len(famus))
-    # llm_training_data_dump(famus, 'gpt-4o', backend, 500)
-    llm_doc_path = '../data/llm_naive_prediction_for_all_documents_v2.json' 
-    write_llm_spans_into_docs(famus, llm_doc_path)
-    tokenizer = AutoTokenizer.from_pretrained("allenai/longformer-base-4096")
-    save_dir = '../data/dataset'
-    dataset = SpanPairDataset(famus, tokenizer, save_dir)
-
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     paths = ['../data/train.jsonl', '../data/dev.jsonl', '../data/test.jsonl']
+#     famus = []
+#     for path in paths:
+#         famus.extend(read_from_jsonl(path))
+#     print(len(famus))
+#     # llm_training_data_dump(famus, 'gpt-4o', backend, 500)
+#     llm_doc_path = '../data/llm_naive_prediction_for_all_documents_v2.json' 
+#     write_llm_spans_into_docs(famus, llm_doc_path)
+#     tokenizer = AutoTokenizer.from_pretrained("allenai/longformer-base-4096")
+#     save_dir = '../data/dataset'
+#     dataset = SpanPairDataset(famus, tokenizer, save_dir)
+#
+#
+# if __name__ == "__main__":
+#     main()
