@@ -99,6 +99,8 @@ def write_llm_spans_into_one_doc(d: Document, llm_dict: Dict):
     llm_roles = []
     for argument, span in list(llm_dict.items())[:-1]:
         start_idx, end_idx = fuzzy_find(llm_dict['Summary'], span)
+        if span == 'N/A' or span == llm_dict['Summary']:
+            start_idx, end_idx = None, None
         span_list = [span, start_idx, end_idx, None, None, argument]
         span = DocumentSpan(span_list)
         llm_roles.append(span)

@@ -5,14 +5,24 @@ from transformers import LongformerModel
 
 
 class Vectorizer(torch.nn.Module):
-    def __init__(self, pretrained_model: str = 'allenai/longformer-base-4096', project_dim: int = 128):
+    def __init__(self, pretrained_model: str = 'allenai/longformer-base-4096', dropout: int = 0.02, project_dim: int = 256):
         super(Vectorizer, self).__init__()
         self.encoder = LongformerModel.from_pretrained(pretrained_model)
         self.projection_head = nn.Sequential(
+            nn.LayerNorm(self.encoder.config.hidden_size),
             nn.Linear(self.encoder.config.hidden_size, self.encoder.config.hidden_size),
-            nn.ReLU(),
+            nn.GELU(),
+            nn.LayerNorm(self.encoder.config.hidden_size),
+            nn.Dropout(dropout),
             nn.Linear(self.encoder.config.hidden_size, project_dim)
         )
+        for m in self.projection_head.modules():
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight, gain=0.005)
+                if m.bias is not None:
+                    nn.init.constant_(m.bias, 0)
+        self.span_pooling = nn.Linear(self.encoder.config.hidden_size, 1, bias=False)
+        nn.init.xavier_uniform_(self.span_pooling.weight, gain=0.005)
 
     def forward(
         self,
@@ -65,14 +75,19 @@ class Vectorizer(torch.nn.Module):
         Returns:
             normalized: Tensor of shape (total_spans, project_dim)
         """
-        # Expand span masks to match hidden size
-        span_lengths = span_masks.sum(dim=1).clamp(min=1e-9).unsqueeze(-1)
-        span_masks = span_masks.unsqueeze(-1)  # Shape: (total_spans, seq_length, 1)
-        span_masks = span_masks.expand(-1, -1, sequence_output.size(-1))  # Shape: (total_spans, seq_length, hidden_size)
+        # span_lengths = span_masks.sum(dim=1).clamp(min=1e-9).unsqueeze(-1)
+        # span_masks = span_masks.unsqueeze(-1)  # Shape: (total_spans, seq_length, 1)
+        # span_masks = span_masks.expand(-1, -1, sequence_output.size(-1))  # Shape: (total_spans, seq_length, hidden_size)
 
-        # Apply masks and compute span embeddings
-        masked_output = sequence_output * span_masks  # Element-wise multiplication
-        span_embedding = masked_output.sum(dim=1) / span_lengths  # Shape: (total_spans, hidden_size)
+        # masked_output = sequence_output * span_masks.float() 
+        scores = self.span_pooling(sequence_output).squeeze(-1)
+        scores = torch.clamp(scores, min=-100, max=100)
+        # scores = scores.masked_fill(span_masks == 0, float('-inf'))
+        attention_mask = (span_masks == 1).float()
+        scores = scores * attention_mask + (-1e9) * (1 - attention_mask)
+        attn_weights = F.softmax(scores, dim=-1).unsqueeze(-1)
+        span_embedding = (sequence_output * attn_weights).sum(dim=1)
+        # span_embedding = masked_output.sum(dim=1) / span_lengths  # Shape: (total_spans, hidden_size)
 
         # Project and normalize
         projected = self.projection_head(span_embedding)  # Shape: (total_spans, project_dim)

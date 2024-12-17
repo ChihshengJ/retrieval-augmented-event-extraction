@@ -1,15 +1,20 @@
 import os
 import torch
 from torch.utils.data import Dataset, DataLoader, random_split
-import torch.nn.functional as F
 from torch.cuda.amp import autocast, GradScaler
+from torch.optim.lr_scheduler import LinearLR
 import argparse
 from transformers import AutoTokenizer
 from tqdm import tqdm
-import matplotlib.pyplot as plt
+import wandb
+from sklearn.metrics import roc_curve, roc_auc_score
+import numpy as np
 
 from model import Vectorizer
 from data_preprocessing.train_data_prep import SpanPairDataset, collate_fn
+
+
+BAD_EXAMPLES = {302, 448, 552, 553, 954, 1044, 1046, 1458, 1702, 1703, 1760, 2094, 2232, 2289, 2511, 2518}
 
 
 class SpanPairDatasetWrapper(Dataset):
@@ -45,7 +50,6 @@ def info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.1):
     Returns:
         torch.Tensor: Total InfoNCE loss (averaged over all pairs).
     """
-    # Ensure inputs are tensors
     assert human_span_reps.shape == llm_span_reps.shape, "Mismatch in representation dimensions"
     # print(human_span_reps.shape, llm_span_reps.shape, labels.shape)
 
@@ -60,7 +64,7 @@ def info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.1):
     positive_mask = torch.eye(N, dtype=torch.float32).to('cuda') * labels.view(-1, 1)
     numerator = (exp_sim * positive_mask).sum(dim=1)
     denominator = exp_sim.sum(dim=1)
-    eps = 1e-10
+    eps = 1e-9
     loss = -torch.log(numerator / (denominator + eps) + eps)
 
     valid_loss = loss[labels == 1]
@@ -70,58 +74,47 @@ def info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.1):
         return torch.tensor(0.0, requires_grad=True), similarities
     else:
         return valid_loss.mean(), similarities
-    # total_loss = 0.0  # Accumulator for total loss
-    # sim_list = []
-    # for human_rep, llm_rep, label in zip(human_span_reps, llm_span_reps, labels):
-    #     # Compute similarity for the current pair
-    #     similarity = torch.cosine_similarity(human_rep.unsqueeze(0), llm_rep.unsqueeze(0), dim=-1)
-    #     sim_list.append(similarity)
-    #
-    #     # Create positive and negative masks
-    #     positive_mask = (label == 1).float()  # Positive if label == 1
-    #     negative_mask = (label == 0).float()  # Negative if label == 0
-    #
-    #     # Numerator: Similarity for positive pairs
-    #     positive_score = torch.exp(similarity / temperature) * positive_mask
-    #     print('pos score:', positive_score)
-    #
-    #     # Denominator: Similarities for all pairs (in this loop, includes current pair)
-    #     all_scores = torch.exp(similarity / temperature)
-    #     print('all score:', all_scores.sum(dim=-1))
-    #     # InfoNCE loss for this pair
-    #     if positive_mask.sum() > 0:  # Only compute loss if positive pairs exist
-    #         pair_loss = -torch.log(positive_score / all_scores.sum(dim=-1))
-    #         total_loss += pair_loss.sum()
-    #     print('current_loss_in_loop:', total_loss)
-    #
-    # # Average the loss over all pairs
-    # total_loss /= len(human_span_reps)
-    #
-    # return total_loss, sim_list
 
 
 def train_model(train_loader,
                 eval_loader,
                 model,
-                device='cuda',
-                num_epochs=1,
-                lr=0.005,
-                lr_scheduler=None,
-                batch_size=None,
-                output_dir=None
+                device,
+                num_epochs,
+                lr,
+                lr_scheduler,
+                weight_decay,
+                batch_size,
+                output_dir='../../data/checkpoints/'
                 ):
     model.to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
+    if lr_scheduler:
+        scheduler = LinearLR(
+            optimizer, 
+            start_factor=0.1,
+            end_factor=1.0,
+            total_iters=100)
 
-    optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
     best_eval_loss = float('inf')
     best_model_path = None
+    global_step = 0 
+    accumulation_steps = 4
 
-    step_losses = []
+    max_grad_norm = 1.0
+
+    epoch_grad_norms = []
+    # epoch_embedding_stats = []
 
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0
-        scaler = GradScaler()
+        scaler = GradScaler(
+            init_scale=2**8, 
+            growth_factor=1.5, 
+            backoff_factor=0.3, 
+            growth_interval=1000,
+        )
         with tqdm(train_loader, desc=f'{epoch+1}/{num_epochs}', unit="batch") as pbar:
             for step, batch in enumerate(pbar):
 
@@ -137,58 +130,81 @@ def train_model(train_loader,
                 optimizer.zero_grad()
                 with autocast():
                     human_span_reps, llm_span_reps = model(
-                        doc_input_ids=doc_tokens, 
-                        doc_attention_mask=doc_attn_mask, 
+                        doc_input_ids=doc_tokens,
+                        doc_attention_mask=doc_attn_mask,
                         summary_input_ids=summary_tokens,
                         summary_attention_mask=summary_attn_mask,
                         og_span_masks=human_span_masks,
                         llm_span_masks=llm_span_masks,
-                        sample_indices=sample_indices,
+                        sample_indices=sample_indices
                     )
-
-                    loss, _ = info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.1)
+                    loss, _ = info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.5)
+                    loss = loss / accumulation_steps
 
                 scaler.scale(loss).backward()
-                scaler.step(optimizer)
-                scaler.update()
 
-                step_loss = loss
-                step_losses.append(step_loss)
+                if (step + 1) % accumulation_steps == 0:
+                    scaler.unscale_(optimizer)
+
+                    if step % 100 == 0:
+                        print("\nGradient norms before clipping:")
+                        grad_norms = {}
+                        for name, param in model.named_parameters():
+                            if param.grad is not None:
+                                grad_norm = param.grad.norm().item()
+                                grad_norms[name] = grad_norm
+                                print(f"{name}: {grad_norm:.4f}")
+                        epoch_grad_norms.append(grad_norms)
+
+                    # Gradient clipping
+                    for param in model.parameters():
+                        if param.grad is not None:
+                            param.grad.data.clamp_(-1.0, 1.0)
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
+
+                    scaler.step(optimizer)
+                    scaler.update()
+                    scheduler.step()
+                    optimizer.zero_grad()
+
+                    current_lr = scheduler.get_last_lr()[0]
+                    pbar.set_postfix({
+                        "Step Loss": f"{loss.item() * accumulation_steps:.4f}",
+                        "LR": f"{current_lr:.6f}"
+                    })
+
+                step_loss = loss.item() * accumulation_steps
                 epoch_loss += step_loss
+                global_step += 1
+                wandb.log({"train_step_loss": step_loss}, step=global_step)
 
-                pbar.set_postfix({"Step Loss": f"{step_loss:.4f}"})
+        avg_train_loss = epoch_loss / len(train_loader)
+        print(f"Epoch {epoch + 1}/{num_epochs}, Training Loss: {avg_train_loss:.4f}")
 
-            print(f"Epoch {epoch + 1}/{num_epochs}, Training Loss: {epoch_loss / len(train_loader):.4f}")
+        wandb.log({"train_loss": avg_train_loss}, step=epoch)
 
-            if eval_loader is not None:
-                eval_loss, accuracy = evaluate(eval_loader, model, device)
-                print(f"Epoch {epoch + 1}/{num_epochs}, Evaluation Loss: {eval_loss:.4f}, Evaluation Accuracy: {accuracy:.4f}")
+        if eval_loader is not None:
+            eval_loss, accuracy = evaluate(eval_loader, None, model, device)
+            print(f"Epoch {epoch + 1}/{num_epochs}, Evaluation Loss: {eval_loss:.4f}, Evaluation Accuracy: {accuracy:.4f}")
 
-                if eval_loss < best_eval_loss:
-                    best_eval_loss = eval_loss
-                    os.makedirs(output_dir, exist_ok=True)
-                    best_model_path = os.path.join(output_dir, f"best_model_epoch_{epoch + 1}.pt")
-                    torch.save(model.state_dict(), best_model_path)
-                    print(f"Best model saved to {best_model_path}")
+            wandb.log({"val_loss": eval_loss, "val_accuracy": accuracy}, step=epoch)
 
-    plt.figure(figsize=(10, 6))
-    plt.plot(step_losses, label='Step Loss')
-    plt.xlabel('Step')
-    plt.ylabel('Loss')
-    plt.title('Training Loss Over Steps')
-    plt.legend()
-    if output_dir:
-        plt.savefig(os.path.join(output_dir, 'step_loss.png'))
-    plt.show()
+            if eval_loss < best_eval_loss:
+                best_eval_loss = eval_loss
+                os.makedirs(output_dir, exist_ok=True)
+                best_model_path = os.path.join(output_dir, f"best_model_epoch_{epoch + 1}.pt")
+                torch.save(model.state_dict(), best_model_path)
+                print(f"Best model saved to {best_model_path}")
 
     return best_model_path
 
 
-def evaluate(eval_loader, model, device='cuda', similarity_threshold=0.5):
+def evaluate(eval_loader, checkpoint_path, model, device='cuda', similarity_threshold=0.7):
     """
     Evaluate the model on the validation/test set and compute loss and accuracy.
     Args:
         eval_loader: DataLoader for the evaluation set.
+        checkpoint_path: The path that stores the saved best model, if None, use the model directly.
         model: The model to evaluate.
         device: The device to run evaluation on ('cuda' or 'cpu').
         similarity_threshold: Threshold to classify similarity scores.
@@ -196,6 +212,10 @@ def evaluate(eval_loader, model, device='cuda', similarity_threshold=0.5):
         avg_loss: Average loss over the evaluation set.
         accuracy: Accuracy of predictions based on similarity threshold.
     """
+    if checkpoint_path:
+        checkpoint = torch.load(checkpoint_path, map_location=device)
+        model.load_state_dict(checkpoint)
+        print("model loaded from previous checkpoint")
     model.to(device)
     model.eval()
     total_loss = 0
@@ -225,15 +245,18 @@ def evaluate(eval_loader, model, device='cuda', similarity_threshold=0.5):
                 llm_span_masks=llm_span_masks,
                 sample_indices=sample_indices,
             )
-
+            # print(human_span_reps)
+            # print(llm_span_reps)
             # Compute loss and predictions
             batch_correct = 0
             batch_total = 0
 
             loss, sims = info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.1)
             # print('current_loss', loss.item())
+            # print(sims.shape)
 
             for idx, similarity in enumerate(sims[0]):
+                print("similarity:", similarity)
                 prob = torch.sigmoid(similarity)
                 predicted = (prob > similarity_threshold).float() 
                 # print(prob, labels[idx])
@@ -249,16 +272,74 @@ def evaluate(eval_loader, model, device='cuda', similarity_threshold=0.5):
     return avg_loss, accuracy
 
 
+def find_best_threshold(eval_loader, checkpoint_path, model, device='cuda'):
+    if checkpoint_path is not None:
+        checkpoint = torch.load(checkpoint_path, map_location=device)
+        model.load_state_dict(checkpoint)
+        print("model loaded from previous checkpoint")
+    model.to(device)
+    model.eval()
+
+    stored_similarities = []
+    stored_labels = []
+
+    with torch.no_grad():
+        # for batch in tqdm(eval_loader, desc='evaluating'):
+        for batch in eval_loader:
+            # Move tensors to the device
+            doc_tokens = batch['doc_tokens'].to(device)
+            doc_attn_mask = batch['doc_attn_mask'].to(device)
+            summary_tokens = batch['summary_tokens'].to(device)
+            summary_attn_mask = batch['summary_attn_mask'].to(device)
+            human_span_masks = batch['human_span_masks'].to(device)
+            llm_span_masks = batch['llm_span_masks'].to(device)
+            labels = batch['labels'].to(device)
+            sample_indices = batch['sample_indices'].to(device)
+
+            # Forward pass for human and LLM spans
+            human_span_reps, llm_span_reps = model(
+                doc_input_ids=doc_tokens, 
+                doc_attention_mask=doc_attn_mask, 
+                summary_input_ids=summary_tokens,
+                summary_attention_mask=summary_attn_mask,
+                og_span_masks=human_span_masks,
+                llm_span_masks=llm_span_masks,
+                sample_indices=sample_indices,
+            )
+
+            _, sims = info_nce_loss(human_span_reps, llm_span_reps, labels, temperature=0.1)
+
+            for idx, similarity in enumerate(sims[0]):
+                # prob = torch.sigmoid(similarity)
+                stored_similarities.append(similarity.cpu().item())
+                stored_labels.append(labels[idx].cpu().item())
+
+        # fpr, tpr, thresholds = roc_curve(stored_labels, stored_similarities)
+        # optimal_idx = (tpr - fpr).argmax()
+        # optimal_threshold = thresholds[optimal_idx]
+        # print("optimal_threshold: ", optimal_threshold)
+        auc = roc_auc_score(stored_labels, stored_similarities)
+        print(f"AUROC: {auc}")
+        # correlation_matrix = np.corrcoef(stored_similarities, stored_labels)
+
+        # correlation = correlation_matrix[0, 1]
+
+        # print(f"Pearson Correlation: {correlation}")
+
+    return 
+
+
 def split_dataset(samples, train_ratio=0.8, dev_ratio=0.1, test_ratio=0.1):
     """Split samples into train, dev, and test sets."""
-    total_samples = len(samples)
+    filtered_samples = [sample for idx, sample in enumerate(samples) if idx not in BAD_EXAMPLES]
+    total_samples = len(filtered_samples)
     train_size = int(total_samples * train_ratio)
     dev_size = int(total_samples * dev_ratio)
     test_size = total_samples - train_size - dev_size
-    return random_split(samples, [train_size, dev_size, test_size])
+    return random_split(filtered_samples, [train_size, dev_size, test_size])
 
 
-def create_dataloaders(dataset, batch_size=16, num_workers=4):
+def create_dataloaders(dataset, batch_size=1, num_workers=4):
     """Create DataLoader for a dataset."""
     return DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers, collate_fn=collate_fn)
 
@@ -271,8 +352,12 @@ def parse_args():
         help='Pre-trained model name or path'
     )
     parser.add_argument(
-        '--project_dim', type=int, default=128,
+        '--project_dim', type=int, default=256,
         help='The projection head used in the model for the outputs'
+    )
+    parser.add_argument(
+        '--dropout', type=int, default=0.1,
+        help='Dropout for the projection layer.'
     )
 
     # Training parameters
@@ -285,7 +370,7 @@ def parse_args():
         help='Number of training epochs'
     )
     parser.add_argument(
-        '--lr', type=float, default=2e-5,
+        '--lr', type=float, default=1e-5,
         help='Learning rate for the optimizer'
     )
 
@@ -314,8 +399,8 @@ def parse_args():
         help='Random seed for reproducibility'
     )
     parser.add_argument(
-        '--data_dir', type=str, default='../data/dataset',
-        help='Directory to save the trained model and checkpoints'
+        '--data_dir', type=str, default='../data/dataset_v3',
+        help='Directory to the dataset'
     )
     parser.add_argument(
         '--output_dir', type=str, default='../data/checkpoints',
@@ -328,7 +413,16 @@ def parse_args():
 
 def main():
     args = parse_args()
-    model = Vectorizer(pretrained_model=args.model_name, project_dim=args.project_dim)
+    wandb.init(
+        project="RAEE",
+        name="exp_3", 
+        config={             
+            "learning_rate": args.lr,
+            "epochs": args.num_epochs,
+            "batch_size": args.batch_size,
+        }
+    )
+    model = Vectorizer(pretrained_model=args.model_name, dropout=args.dropout, project_dim=args.project_dim)
     # global_attention_mask = torch.zeros_like(input_ids)
     # global_attention_mask[:, 0] = 1  # Set global attention on the [CLS] token
     # loaded_samples = torch.load('span_pair_dataset.pt')
@@ -345,18 +439,21 @@ def main():
     dev_loader = create_dataloaders(dev_dataset, batch_size=args.batch_size, num_workers=args.num_workers)
     test_loader = create_dataloaders(test_dataset, batch_size=args.batch_size, num_workers=args.num_workers)
 
-    train_model(train_loader=train_loader,
-                eval_loader=dev_loader,
-                model=model,
-                device='cuda',
-                num_epochs=args.num_epochs,
-                lr=args.lr,
-                lr_scheduler=None,
-                batch_size=args.batch_size,
-                output_dir=args.output_dir
-                )
+    model_path = train_model(
+        train_loader=train_loader,
+        eval_loader=dev_loader,
+        model=model,
+        device='cuda',
+        num_epochs=args.num_epochs,
+        lr=args.lr,
+        lr_scheduler=True,
+        batch_size=args.batch_size,
+        weight_decay=args.weight_decay,
+        output_dir=args.output_dir
+    )
 
-    print(evaluate(test_loader, model))
+    # model_path = os.path.join(args.output_dir, 'best_model_epoch_1.pt')
+    find_best_threshold(test_loader, model_path, model)
 
 
 if __name__ == '__main__':

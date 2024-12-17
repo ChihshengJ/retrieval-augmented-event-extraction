@@ -1,5 +1,6 @@
 import os
 import tqdm
+import json
 import numpy as np
 import pandas as pd
 import torch.nn.functional as F
@@ -9,11 +10,13 @@ from torch import Tensor
 import transformers
 from transformers import AutoTokenizer
 from typing import List, Tuple
-# import sftp
+import pprint
+from sftp import SpanPredictor
 
-from data_preprocessing.data import Document, FieldObject, DocumentSpan, SpanSet, read_from_jsonl 
-from llms import llm_backend, llm_span
-from encoder import Vectorizer
+from data_preprocessing.data import Document, InputDocument, DocumentSpan, SpanSet
+from llms.llm_backend import CompletionAPIFactory
+from llms.llm_span import get_llm_prediction, parse_llm_prediction
+from model import Vectorizer
 
 api_key = os.getenv("OPENAI_API_KEY", "")
 if api_key != "":
@@ -23,18 +26,36 @@ else:
     print("Warning: OPENAI_API_KEY is not set")
 
 
-def main():
-    test_set = read_from_jsonl('../data/test.jsonl')
-    # get_span_database(test_set[0])
-    back_end = llm_backend.CompletionAPIFactory.get_api(api_name='openai', api_key=OPENAI_API_KEY)
-    output = llm_span.get_llm_prediction(d=test_set[40], model='gpt-3.5-turbo', back_end=back_end)
-    print("LLM:", output)
-    for span in test_set[40].roles:
-        print("ano: ", span.argument, ": ", span.textual_span)
-    # tokenizer = AutoTokenizer.from_pretrained("SpanBERT/spanbert-base-cased")
-    # encoder = Vectorizer()
-    # sp = SpanSet(test_set[0], tokenizer=tokenizer, encoder=encoder)
+def load_inputs(file_path: str, predictor: SpanPredictor) -> Document:
+    """
+    Given a json file with the text, event frame, and trigger, turn it into a Document object
+    with all the span masks extracted
+    """
+    data = None
+    with open(file_path, 'r') as f:
+        for line in f:
+            data = json.loads(line) 
+    return InputDocument(data["Document"], data["Event"], data["Trigger"], predictor)
 
+
+def retrieval_extraction(file_path: str, llm_backend, predictor: SpanPredictor, encoder: Vectorizer):
+    test_example = load_inputs('../data/infertest/test_1.json', predictor)
+    prediction = parse_llm_prediction(get_llm_prediction(test_example, model='gpt-4o', back_end=llm_backend))
+
+
+    return None 
+
+
+def main():
+    predictor = None
+    predictor = SpanPredictor.from_path(
+        '/data/svashishtha/spanfinder/model/model.tar.gz',
+        cuda_device=1,
+    )
+    llm_backend = CompletionAPIFactory.get_api(api_name='openai', api_key=OPENAI_API_KEY)
+    # prediction = llm_span.get_llm_prediction(d=test_exmaple, model='gpt-4o', back_end=back_end)
+
+    
 
 
 if __name__ == '__main__':
