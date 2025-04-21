@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from transformers import LongformerModel
 
 
-class Vectorizer(torch.nn.Module):
+class Vectorizer(nn.Module):
     def __init__(self, pretrained_model: str = 'allenai/longformer-base-4096', dropout: int = 0.02, project_dim: int = 256):
-        super(Vectorizer, self).__init__()
+        super.__init__()
         self.encoder = LongformerModel.from_pretrained(pretrained_model)
         self.projection_head = nn.Sequential(
             nn.LayerNorm(self.encoder.config.hidden_size),
@@ -82,6 +82,7 @@ class Vectorizer(torch.nn.Module):
         # masked_output = sequence_output * span_masks.float() 
         scores = self.span_pooling(sequence_output).squeeze(-1)
         scores = torch.clamp(scores, min=-100, max=100)
+
         # scores = scores.masked_fill(span_masks == 0, float('-inf'))
         attention_mask = (span_masks == 1).float()
         scores = scores * attention_mask + (-1e9) * (1 - attention_mask)

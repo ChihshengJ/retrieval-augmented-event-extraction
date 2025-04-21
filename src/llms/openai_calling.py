@@ -6,7 +6,7 @@ import openai
 
 def call_openai_api():
     try:
-        with open("./llms/input.json", "r") as f:
+        with open("/data/cjin/retrieval-augmented-event-extraction/src/llms/input.json", "r") as f:
             params = json.load(f)
         response = openai.chat.completions.create(**params)
         return {"success": True, "response": response.choices[0].message.content}

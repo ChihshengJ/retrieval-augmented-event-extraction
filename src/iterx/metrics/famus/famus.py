@@ -6,7 +6,7 @@ from typing import Any, Dict, List
 from allennlp.training.metrics import Metric
 from overrides import overrides
 
-from iterx.metrics.famus.gtt_eval_utils import add_normalized_templates, convert_docid, eval_tf, read_gold_templates
+from .gtt_eval_utils import add_normalized_templates, convert_docid, eval_tf, read_gold_templates
 
 logger = logging.getLogger('FAMuS')
 

@@ -8,8 +8,8 @@ from overrides import overrides
 from scipy.optimize import linear_sum_assignment
 
 # GTT
-from iterx.metrics.conll_coref_scores_mod import CountSingletonsScorer
-from iterx.metrics.famus.gtt_eval_utils import normalize_string
+from src.iterx.metrics.conll_coref_scores_mod import CountSingletonsScorer
+from src.iterx.metrics.famus.gtt_eval_utils import normalize_string
 
 GTTEntity = List[str]
 GTTSlot = List[GTTEntity]
@@ -67,7 +67,7 @@ class EditDistance:
         return distance[n,m]
 
 
-def normalized_levenshtein(gold_span, 
+def normalized_levenshtein(gold_span,
                            predicted_span,
                            edit_distance: EditDistance = EditDistance()):
     """
@@ -183,7 +183,7 @@ class CEAFRMEScorer(CountSingletonsScorer):
         return similarity, len(clusters), r_similarity, len(gold_clusters)
 
     @classmethod
-    @overrides(check_signature=False)
+    @overrides
     def ceafe(cls, clusters, gold_clusters, output_raw=False):
         multlabel_gold_cluster_ids = []
         multilabels = {}
@@ -374,7 +374,7 @@ class CEAFRMEPhi3Scorer(CountSingletonsScorer):
         return similarity, p_similarity, similarity, r_similarity
 
     @classmethod
-    @overrides(check_signature=False)
+    @overrides
     def ceafe(cls, clusters, gold_clusters, output_raw=False):
         multlabel_gold_cluster_ids = []
         multilabels = {}
@@ -497,7 +497,7 @@ class CEAFRMEPhi3LevenshteinScorer(CEAFRMEScorer):
         return similarity, p_similarity, similarity, r_similarity
 
     @classmethod
-    @overrides(check_signature=False)
+    @overrides
     def ceafe(cls, clusters, gold_clusters, output_raw=False):
         multlabel_gold_cluster_ids = []
         multilabels = {}

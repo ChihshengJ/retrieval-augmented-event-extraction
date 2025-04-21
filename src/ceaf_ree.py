@@ -1,9 +1,11 @@
 import json
-from iterx.metrics.famus.iterx_famus import IterXFAMuSMetric
 import numpy as np
 from tqdm import tqdm
 import argparse
 import os
+
+
+from .iterx.metrics.famus.iterx_famus import IterXFAMuSMetric
 
 
 def str2bool(v):

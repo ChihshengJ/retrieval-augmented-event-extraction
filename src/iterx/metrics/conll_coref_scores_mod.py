@@ -2,7 +2,7 @@ import numpy as np
 from overrides import overrides
 from scipy.optimize import linear_sum_assignment
 
-from iterx.metrics.conll_coref_scores import Scorer
+from src.iterx.metrics.conll_coref_scores import Scorer
 
 
 class CountSingletonsScorer(Scorer):

@@ -111,7 +111,7 @@ def frame_to_info_dct(frame: str):
     return dct
 
 
-def frame_to_llm_prompt_info_dct(frame_name):
+def frame_to_llm_prompt_info_dict(frame_name):
     """
     Given a frame name, return a dictionary with the following keys:
     - event_type: frame_name
@@ -154,6 +154,9 @@ def fuzzy_find(summary, span, match_score=2, mismatch_penalty=-1, gap_penalty=-1
     returns:
         (start_idx, end_idx): character indices of the span in the summary
     """
+    if span == '':
+        return 0, 0
+
     summary_tokens = tokenize(summary)
     span_tokens = tokenize(span)
     (start_idx, end_idx), aligned_seq1, aligned_seq2 = smith_waterman(
@@ -322,7 +325,7 @@ def sentence_token_span_to_doc_spans(sentence_token_spans: Dict[str, int], docum
     doc_level_end_char_idx = doc_level_start_char_idx + len(" ".join(document_tokens[
                                     sentence_idx][sentence_token_spans['startToken']:
                                                   sentence_token_spans['endToken']]))
-    
+
     char_text = document_text[doc_level_start_char_idx: doc_level_end_char_idx]
 
     # assert tokens and characters match

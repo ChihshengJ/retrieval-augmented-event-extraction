@@ -1,0 +1,2466 @@
+[{
+    "Let me help by providing role annotations from the given source text": "",
+    "Agent": "me (John Fogerty)",
+    "Theme": "a good job in the city",
+    "Time": "middle of July of '68",
+    "Place": "N/A",
+    "Summary": "John Fogerty left his job in the city after receiving his honorable discharge from the National Guard in July 1968, which inspired the lyrics of \"Proud Mary.\"",
+    "Note": "This annotation is based on the event of leaving/abandoning a job as referenced in the article, specifically tied to the lyric writing of \"Proud Mary.\" The source provides clear context about the agent (Fogerty), the theme (his job), and the timing, though the specific place is not mentioned.",
+    "instance_id": "EN-4363-3-frame-Abandonment"
+},
+{
+    "If we were to analyze the technology's purpose": "",
+    "instance_id": "EN-1250-499-frame-Abusing"
+},
+{
+    "Based on the source text": "",
+    "Cognizer": "Carl Ferdinand Cori and Gerty Cori",
+    "New_idea": "the Cori cycle",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Carl and Gerty Cori discovered the Cori cycle, a metabolic pathway where lactate produced by anaerobic glycolysis in muscles is transported to the liver and converted to glucose, which then returns to the muscles to be metabolized back to lactate. For this groundbreaking discovery in carbohydrate metabolism, they were awarded the Nobel Prize in 1947.",
+    "instance_id": "EN-4898-324-frame-Achieving_first"
+},
+{
+    "Let me extract the roles from the Source document": "",
+    "Agent": "the club",
+    "Activity": "the previous season",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Southampton Football Club ended their previous season with their parent company in administration, which resulted in a 10-point deduction penalty from The Football League for the 2009-10 season.",
+    "Note": "I focused on the event of finishing/ending the season as mentioned in the Report. While the Source provides extensive details about the administration and points deduction, I kept the role extraction specific to the \"ending\" event mentioned in the Report. The Time and Place are not explicitly mentioned in relation to the ending of the season.",
+    "instance_id": "EN-2050-4-frame-Activity_finish"
+},
+{
+    "Activity": "Breakfast Television",
+    "Agent": "Rogers",
+    "Time": "until September 23",
+    "Place": "N/A",
+    "Summary": "Rogers placed Breakfast Television on hiatus until September 23, when the program was relaunched with a new hybrid format that mixed local content with national entertainment and lifestyle segments produced from Toronto.",
+    "instance_id": "EN-1337-261-frame-Activity_pause"
+},
+{
+    "Let me extract the roles from the Source document": "",
+    "Protagonist": "\"AJ Allmendinger\"",
+    "Activity": "\"to drive the No. 3 Chevrolet\"",
+    "Salient_entity": "N/A",
+    "Time": "\"Sunday\"",
+    "Summary": "AJ Allmendinger was ready to drive the No. 3 Chevrolet at Homestead-Miami Speedway on Sunday as a standby driver for Austin Dillon, who was expecting his first child, but was not needed as Dillon made it to the track after his son was born early that morning.",
+    "instance_id": "EN-2677-838-frame-Activity_ready_state"
+},
+{
+    "Activity": "a tenth-century Armenian church",
+    "Agent": "None",
+    "Time": "recently",
+    "Place": "None",
+    "Summary": "A tenth-century Armenian church recently resumed operations as a mosque, marking a transformation of Armenian cultural heritage in Turkey.",
+    "instance_id": "EN-4059-473-frame-Activity_resume"
+},
+{
+    "Activity": "the reverse operation of unfastening, lowering and guiding the ship off the platform",
+    "Agent": "MV Transshelf",
+    "Time": "Jan. 19",
+    "Place": "Port of Pascagoula",
+    "Summary": "The heavy lift vessel MV Transshelf began the reverse operation of unfastening, lowering and guiding the USS Fitzgerald off its platform at the Port of Pascagoula on January 19, marking the start of the ship's extensive repair process following its collision with a merchant ship.",
+    "instance_id": "EN-1734-21-frame-Activity_start"
+},
+{
+    "Let me help extract the roles from the Source document": "",
+    "Agent": "Bauer Media Group",
+    "Activity": "New Zealand operations",
+    "Time": "Thursday morning",
+    "Place": "New Zealand",
+    "Summary": "Bauer Media Group closed its New Zealand operations, including several iconic magazines like New Zealand Listener, Woman's Day, and New Zealand Woman's Weekly, after determining the business was no longer viable due to Covid-19 disruption and declining advertising revenue.",
+    "instance_id": "EN-0131-494-frame-Activity_stop"
+},
+{
+    "Agent": "players",
+    "Part": "stages and rules",
+    "Feature": "None",
+    "Time": "None",
+    "Place": "Free Battle Mode",
+    "Summary": "In the Free Battle Mode of Blayzbloo, players can customize stages and rules without limitations, allowing for personalized gameplay experiences in both single-player and multiplayer matches with up to four players.",
+    "instance_id": "EN-0206-1711-frame-Adjusting"
+},
+{
+    "Based on the source document, here are the role annotations": "",
+    "Agriculturist": "Donald Mt Cook Burnett",
+    "Food": "merino sheep (implied through \"merino woolgrower\")",
+    "Ground": "Mt Cook Station",
+    "Time": "69 years until 2010",
+    "Place": "Tasman Valley in South Canterbury's Mackenzie country",
+    "Summary": "Donald Mt Cook Burnett actively ran Mt Cook Station for 69 years until 2010, operating it as a merino sheep farm in South Canterbury's Mackenzie country. During his tenure, he became a world-leading merino woolgrower, winning the inaugural World Challenge Trophy in 2000.",
+    "instance_id": "EN-7407-390-frame-Agriculture"
+},
+{
+    "Let me extract the role spans from the source text": "",
+    "Experiencer": "householders",
+    "Topic": "None",
+    "Stimulus": "Just as we sing, these sons of the Sakyan sing",
+    "Expressor": "None",
+    "State": "None",
+    "Time": "None",
+    "Summary": "Householders were annoyed at Buddhist monks reciting the Dhamma with musical intonation, comparing their singing to regular singing, which was considered one of the five dangers of such recitation according to the Buddha.",
+    "instance_id": "EN-0546-168-frame-Annoyance"
+},
+{
+    "Cook": "None",
+    "Heating_instrument": "None",
+    "Food": "water",
+    "Temperature_setting": "None",
+    "Container": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "The concept of boiling water to make steam was discussed as a fundamental aspect of water physics that everyone understands, in the context of developing a physics-based water game.",
+    "instance_id": "EN-2537-1492-frame-Apply_heat"
+},
+{
+    "Let me extract the roles from the Source document": "",
+    "Selector": "Firoz Kassam",
+    "Official": "David Kemp",
+    "Role": "manager",
+    "Body": "Oxford United",
+    "Time": "mid-October",
+    "Place": "Manor Ground",
+    "Function": "N/A",
+    "Summary": "Firoz Kassam, the chairman of Oxford United, appointed David Kemp as the new manager of the club at the Manor Ground in mid-October, with Joe Kinnear joining as director of football.",
+    "instance_id": "EN-4023-69-frame-Appointing"
+},
+{
+    "Based on the Report and Source, here are the role annotations": "",
+    "Defendant": "Miguel Angel Corea Diaz",
+    "Judge": "Acting Supreme Court Justice Patricia Harrington",
+    "Charges": "charges of conspiracy to commit murder and trafficking drugs",
+    "Time": "April 19, 2018",
+    "Place": "Nassau County Court in Mineola, New York",
+    "Summary": "Miguel Angel Corea Diaz, the East Coast kingpin of MS-13, was arraigned in Nassau County Court on April 19, 2018, on charges including conspiracy to commit murder and drug trafficking before Acting Supreme Court Justice Patricia Harrington, facing potential life imprisonment if convicted.",
+    "instance_id": "EN-1142-218-frame-Arraignment"
+},
+{
+    "Agent": "Gary Olson",
+    "Theme": "trumpet parts",
+    "Configuration": "N/A",
+    "Time": "1995",
+    "Summary": "In Ladybug Transistor's 1995 album \"Marlborough Farms,\" Gary Olson arranged trumpet parts into the band's music, which was described as a Pavement imitation with some unique elements.",
+    "instance_id": "EN-2476-1477-frame-Arranging"
+},
+{
+    "Let me help you extract the event roles from the Source document": "",
+    "Authorities": "Egyptian police",
+    "Suspect": "Hossam al-Shurbagi and Kamel al-Shaarawi",
+    "Charges": "illegally storing goods",
+    "Offense": "storing 2,200 tonnes of food and medical aid destined for Gaza",
+    "Time": "Thursday",
+    "Place": "northern Sinai",
+    "Summary": "Egyptian police arrested two Muslim Brotherhood members, Hossam al-Shurbagi and Kamel al-Shaarawi, in northern Sinai for illegally storing 2,200 tonnes of food and medical aid intended for Gaza, seizing all the goods during the operation.",
+    "instance_id": "EN-3104-692-frame-Arrest"
+},
+{
+    "Theme": "Petra Kvitov\u00e1",
+    "Goal": "her first grand slam singles final",
+    "Time": "None",
+    "Place": "Centre Court",
+    "Summary": "Petra Kvitov\u00e1, a 21-year-old from the Czech Republic, defeated Maria Sharapova on Centre Court in straight sets (6-3, 6-4) to win her first grand slam title at Wimbledon.",
+    "instance_id": "EN-4630-0-frame-Arriving"
+},
+{
+    "Helper": "the Republican Party",
+    "Benefited_party": "our people",
+    "Goal": "to grow to unparalleled greatness",
+    "Focal_entity": "individual initiative and enterprise",
+    "Time": "during World War I",
+    "Place": "in the United States",
+    "Summary": "During World War I, the Republican Party advocated against excessive government power and supported individual initiative and enterprise, which helped the American people grow to unparalleled greatness according to Herbert Hoover's post-election speech in 1928.",
+    "instance_id": "EN-1469-1-frame-Assistance"
+},
+{
+    "Agent": "one (referring to sinners)",
+    "Wrong": "sin",
+    "Amends": "sacrifice",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "According to Christian belief in the Old Testament, sinners could obtain forgiveness of their sins through sacrifice, though Judaism holds that forgiveness comes exclusively through repentance rather than sacrifice.",
+    "instance_id": "EN-1722-298-frame-Atonement"
+},
+{
+    "Let me help extract the roles from the Source document, focusing on the attachment of prosthetic noses": "",
+    "Agent": "a team of specialists at Royal Melbourne Hospital",
+    "Item": "a new prosthetic nose",
+    "Goal": "his face",
+    "Connector": "magnets",
+    "Items": "N/A",
+    "Time": "N/A",
+    "Place": "Royal Melbourne Hospital",
+    "Summary": "A team of specialists at Royal Melbourne Hospital created a prosthetic nose for Steve Sparks that attaches to his face using magnets, after his original nose was removed due to skin cancer. The prosthetic nose can be snapped on and off his face thanks to titanium implants drilled into his facial bones.",
+    "instance_id": "EN-1405-432-frame-Attaching"
+},
+{
+    "Time": "October 28, 2017",
+    "Assailant": "20 teenage boys",
+    "Victim": "park visitors",
+    "Place": "California's Great America",
+    "Summary": "On October 28, 2017, a group of around 20 teenage boys engaged in a crime spree at California's Great America during Halloween Haunt, assaulting and robbing park visitors, with some attackers using stun guns and causing multiple injuries and widespread panic among the estimated 20,000 visitors.",
+    "instance_id": "EN-1726-68-frame-Attack"
+},
+{
+    "Let me help analyze each example": "",
+    "Example 1": "",
+    "Time": "1800 and 1900s",
+    "Place": "in captivity",
+    "Agent": "[various zoos/breeders - not explicitly stated]",
+    "Goal": "to breed Cougar hybrids with differing big cats",
+    "Summary": "During the 1800s and 1900s, various attempts were made in captivity to breed Cougars with other big cats, including leopards and jaguars, resulting in successful hybrid offspring such as the pumapard.",
+    "Example 2": "",
+    "Example 3": "",
+    "For the fourth example about Puma hybrids, I'll extract the roles": "",
+    "instance_id": "EN-2705-62-frame-Attempt"
+},
+{
+    "Content": "own version of the character",
+    "Speaker": "staff",
+    "Addressee": "Reuben Langdon",
+    "Topic": "Dante's portrayal",
+    "Medium": "N/A",
+    "Salient_entity": "Dante",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Staff members gave suggestions to Reuben Langdon regarding Dante's portrayal, but Langdon was confused by their directions and decided to play his own interpretation of the character.",
+    "instance_id": "EN-4006-283-frame-Attempt_suasion"
+},
+{
+    "Agent": "1.1 million adults",
+    "Event": "cricket matches",
+    "Time": "each year",
+    "Place": "None",
+    "Summary": "Each year, 1.1 million adults attend cricket matches in England and Wales, with the sport having a following of almost 10 million people, representing about 20% of the adult population.",
+    "instance_id": "EN-0134-189-frame-Attending"
+},
+{
+    "Let me analyze the roles based on the source document": "",
+    "Perceiver": "media",
+    "Figure": "Simon Danczuk",
+    "Expressor": "his campaigning",
+    "Summary": "Simon Danczuk, a Labour MP, gained significant media attention through his active campaigning and investigations of historical child abuse allegations against politicians, making him one of the most prominent backbench MPs.",
+    "I based these role assignments on the following reasoning": "",
+    "instance_id": "EN-2039-734-frame-Attention"
+},
+{
+    "From the Source document": "",
+    "Time": "None",
+    "Place": "Baden-W\u00fcrttemberg",
+    "Agent": "Oettinger",
+    "Undesirable_situation": "EU regulations",
+    "Summary": "G\u00fcnther Oettinger, as governor of Baden-W\u00fcrttemberg, participated in efforts to circumvent EU regulations regarding contract awards and competition law, particularly in relation to hydraulic engineering projects on the Upper Rhine.",
+    "instance_id": "EN-0928-144-frame-Avoiding"
+},
+{
+    "Accused": "Billy R. Turner",
+    "Judge": "N/A",
+    "Time": "December 5, 2017",
+    "Place": "Shelby County",
+    "Status": "$ 1 million bond",
+    "Summary": "Billy R. Turner, a Shelby County landscaper and church deacon, was indicted on first-degree murder charges in connection with the killing of former NBA player Lorenzen Wright and was held on $1 million bond in December 2017.",
+    "instance_id": "EN-0672-934-frame-Bail_decision"
+},
+{
+    "Based on the source document, here are the role annotations": "",
+    "Weapon": "None",
+    "Protagonist": "Pashtun Islamist armed student group",
+    "Time": "None",
+    "Place": "along the Afghan \u2013 Pakistani border",
+    "Summary": "The Tehrik-i-Taliban Pakistan (TTP), also known as the Pakistani Taliban, is an armed student organization operating along the Afghan-Pakistani border, serving as an umbrella group for various militant student groups in the region.",
+    "instance_id": "EN-2378-280-frame-Bearing_arms"
+},
+{
+    "Entity": "Cunobelinus",
+    "Final_category": "king of the Catuvellauni",
+    "Final_quality": "None",
+    "Time": "9 or 10 CE",
+    "Place": "None",
+    "Summary": "Cunobelinus became king of the Catuvellauni in 9 or 10 CE and ruled for approximately thirty years, during which he controlled much of East Anglia and the south east of England from his core territory in Hertfordshire.",
+    "instance_id": "EN-1431-23-frame-Becoming"
+},
+{
+    "New_member": "The New Saints",
+    "Group": "the Premier League",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "The New Saints was selected to join the Premier League in Welsh women's football as part of a restructuring, despite not having a complete senior women's team at the time, which sparked criticism especially since established teams like Abergavenny were demoted despite their successful performance.",
+    "instance_id": "EN-8075-34-frame-Becoming_a_member"
+},
+{
+    "Entity": "the flowers",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "According to the etymology, the flowers of Eremophila hygrophana undergo a significant color change during the drying process, which is reflected in its scientific name derived from Ancient Greek words meaning \"changing colour during the drying process\".",
+    "instance_id": "EN-1364-789-frame-Becoming_dry"
+},
+{
+    "Entity": "\"Life is a Dream in Cinema\"",
+    "Time": "2006",
+    "Place": "\"at the Museum of Modern Art (MoMA) in New York and La Cin\u00e9math\u00e8que Fran\u00e7aise in Paris\"",
+    "Summary": "The documentary film \"Life is a Dream in Cinema\" about legendary actress Pola Negri made its debut in 2006, appearing at prestigious venues including the Museum of Modern Art in New York and La Cin\u00e9math\u00e8que Fran\u00e7aise in Paris, as well as numerous film festivals and retrospectives across the United States and Europe.",
+    "instance_id": "EN-2399-187-frame-Becoming_visible"
+},
+{
+    "Let me analyze the Report text about the flag of Artsakh": "",
+    "Item": "a white, five-toothed, stepped carpet pattern",
+    "Goal": "the two verges of the cloth's right side",
+    "Connector": "N/A",
+    "Items": "N/A",
+    "Summary": "A distinctive white, five-toothed stepped carpet pattern was added to the flag of Artsakh, connecting from the right side verges, symbolizing Artsakh's separation from Armenia and its desire for reunification.",
+    "instance_id": "EN-0821-606-frame-Being_attached"
+},
+{
+    "Summary": "N/A (No specific birth event is described in the text)",
+    "instance_id": "EN-2727-132-frame-Being_born"
+},
+{
+    "Based on the Report and Source, here are the role annotations": "",
+    "Controlling_entity": "Environment Agency",
+    "Dependent_entity": "commercial installations exceeding 200 litres and domestic installations exceeding 2500 litres",
+    "Dependent_situation": "N/A",
+    "Dependent_variable": "N/A",
+    "Degree": "N/A",
+    "Time": "N/A",
+    "Place": "UK",
+    "Summary": "The Environment Agency in the UK exercises control over oil and fuel storage tanks through pollution regulations, requiring bunded tanks for commercial installations exceeding 200 litres and domestic installations exceeding 2500 litres.",
+    "instance_id": "EN-4484-1123-frame-Being_in_control"
+},
+{
+    "Let me analyze this step by step": "",
+    "1. Device": "the backlight",
+    "2. Time": "N/A (while specific durations are discussed, no specific time period is stated for when the backlight is operating)",
+    "3. Place": "N/A",
+    "Summary": "The backlight in LCD displays operates with reduced \"on\" time through synchronized flashing to decrease motion blur, where the LED backlight is turned on for brief periods after the LCD reaches its target level.",
+    "instance_id": "EN-2860-337-frame-Being_in_operation"
+},
+{
+    "Theme": "The Royal Alexandra Theatre",
+    "Location": "near King and Simcoe Street",
+    "Time": "None",
+    "Place": "Toronto, Ontario",
+    "Summary": "The Royal Alexandra Theatre, a national historic landmark and North America's oldest continuously operating legitimate theatre, is located near King and Simcoe Street in Toronto, Ontario. Built in 1907, this 1,244-seat beaux-arts masterpiece was the first truly \"royal\" theatre on the continent.",
+    "instance_id": "EN-0453-135-frame-Being_located"
+},
+{
+    "For this example, I don't see a literal siege event being described in either document. The phrase \"under siege\" is used metaphorically to describe how certain groups (young Americans, people of color) feel politically threatened or vulnerable after the 2016 election results. Since this is not describing a literal military siege event as defined in the event definition, I would mark all roles as": "",
+    "Assailant": "N/A",
+    "Victim": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "No literal siege event is described in these documents. The term \"under siege\" is used metaphorically to describe political feelings rather than an actual military siege.",
+    "instance_id": "EN-2483-382-frame-Besieging"
+},
+{
+    "Borrower": "people",
+    "Lender": "N/A",
+    "Theme": "acoustic sensors",
+    "Time": "N/A",
+    "Place": "in their neighborhoods",
+    "Summary": "As part of a citizen science initiative in Switzerland, Maeder is lending acoustic sensors to people to record soil sounds in their neighborhoods, with the goal of creating a national library that will serve as a baseline for monitoring soil health.",
+    "instance_id": "EN-2334-390-frame-Borrowing"
+},
+{
+    "Based on the Report and Source documents, I will annotate the roles for the event of freeing slaves through compensated emancipation": "",
+    "Agent": "Lincoln",
+    "Theme": "slaves",
+    "Location_of_confinement": "N/A",
+    "Time": "N/A",
+    "Place": "Delaware",
+    "Summary": "President Lincoln attempted to free slaves through compensated emancipation by offering over $700,000 to Delaware to liberate its slaves, but the Delaware Legislature rejected the proposal. Lincoln later got Congress to approve a slave purchase bill, but slaveholders were not willing to negotiate.",
+    "instance_id": "EN-4349-526-frame-Breaking_out_captive"
+},
+{
+    "For completeness, let me provide the roles that could be extracted if we were to consider the planned/requested building": "",
+    "Agent": "local Taliban authorities",
+    "Created_entity": "drainage ditches around the tops of the alcoves",
+    "Place": "around the tops of the alcoves where the Buddhas were set",
+    "Time": "early 2000",
+    "Components": "N/A",
+    "Summary": "In early 2000, local Taliban authorities requested UN assistance to rebuild drainage ditches around the alcoves where the Bamiyan Buddhas were located, though this construction does not appear to have been carried out.",
+    "instance_id": "EN-5027-59-frame-Building"
+},
+{
+    "Agent": "One dung beetle",
+    "Theme": "dung",
+    "Goal": "None",
+    "Cause": "None",
+    "Time": "in one night",
+    "Place": "None",
+    "Summary": "A single dung beetle has the remarkable ability to bury dung that weighs 250 times more than itself during one night's work.",
+    "instance_id": "EN-4998-28-frame-Burying"
+},
+{
+    "Let me analyze the causation event marked by \"because\" in the Report": "",
+    "Cause": "if it had won, then they would have to finance and host the 1978 contest",
+    "Affected": "the BBC",
+    "Effect": "did not give the song its whole-hearted support",
+    "Actor": "The BBC",
+    "Time": "1977",
+    "Place": "None",
+    "Summary": "In 1977, the BBC did not fully support their Eurovision entry song because if it won, they would have to bear the financial burden of hosting the 1978 contest, a plot point that later inspired \"Eurovision Song Contest: The Story of Fire Saga.\"",
+    "instance_id": "EN-4215-1-frame-Causation"
+},
+{
+    "Agent": "None",
+    "Initial_category": "bishop of the Diocese of Armagh",
+    "Final_category": "archbishop of Armagh and Primate of All Ireland",
+    "Time": "28 April 2020",
+    "Place": "Church of Ireland",
+    "Initial_value": "N/A",
+    "Final_value": "N/A",
+    "Attribute": "role",
+    "Entity": "John McDowell",
+    "Cause": "election as archbishop in March 2020",
+    "Summary": "John McDowell was translated from his position as bishop of the Diocese of Armagh to become the archbishop of Armagh and Primate of All Ireland in the Church of Ireland on April 28, 2020, following his election as archbishop in March 2020.",
+    "instance_id": "EN-2461-3-frame-Cause_change"
+},
+{
+    "Agent": "EU",
+    "Attribute": "money",
+    "Item": "tax raises and spending cuts",
+    "Cause": "Italy's debt crisis",
+    "Time": "2014 to 2026",
+    "Place": "Italy",
+    "Summary": "Due to Italy's debt crisis, the EU demanded austerity measures that would raise \u20ac59.8 billion through spending cuts and tax increases, including freezing public-sector salaries until 2014 and gradually increasing women's retirement age in the private sector from 60 in 2014 to 65 in 2026.",
+    "instance_id": "EN-4960-445-frame-Cause_change_of_position_on_a_scale"
+},
+{
+    "Agent": "Mr. Takumi",
+    "Patient": "player's interest",
+    "Time": "None",
+    "Place": "None",
+    "Cause": "the second episode",
+    "Summary": "Mr. Takumi aimed to solidify players' interest in the game through the second episode, which he ranked as the second most important episode after the opening one.",
+    "instance_id": "EN-2486-899-frame-Cause_change_of_strength"
+},
+{
+    "Agent": "Muhammad Ali",
+    "Experiencer": "Ernie Terrell",
+    "Event": "\"persistently referred to his opponent by his old slave name Cassius Clay\"",
+    "Time": "in the run-up to their savage encounter at the Houston Astrodome on February 6 1967",
+    "Place": "Houston Astrodome",
+    "Summary": "During the lead-up to their 1967 fight at the Houston Astrodome, Ernie Terrell repeatedly called Muhammad Ali by his former name Cassius Clay, causing Ali to take offense and vow revenge, leading him to label Terrell \"an Uncle Tom nigger who is going to get his ass whupped.\"",
+    "instance_id": "EN-0033-320-frame-Cause_emotion"
+},
+{
+    "Agent": "Minnijean Brown Trickey",
+    "Cause": "somebody kicked a chair at her",
+    "Fluid": "chili",
+    "Source": "lunch tray",
+    "Goal": "on two male students",
+    "Path": "None",
+    "Area": "in the cafeteria",
+    "Time": "December 17, 1957",
+    "Place": "Central High School, in Little Rock, Ark.",
+    "Summary": "During a tense period of racial integration at Central High School in Little Rock, Minnijean Brown Trickey, one of nine black students attending the previously all-white school, was harassed in the cafeteria and ended up spilling chili from her lunch tray onto two male students on December 17, 1957, resulting in her suspension.",
+    "instance_id": "EN-7413-1390-frame-Cause_fluidic_motion"
+},
+{
+    "Agent": "Lieutenant Lyster",
+    "Victim": "Barkoski",
+    "Body_part": "ears, nose",
+    "Time": "None",
+    "Place": "at the barracks of the coal and iron police at Imperial",
+    "Cause": "None",
+    "Summary": "Lieutenant Lyster tortured Barkoski at the coal and iron police barracks by twisting his ears until he cried and his broken nose until he lost consciousness, while attempting to force a confession from him.",
+    "instance_id": "EN-2450-22-frame-Cause_harm"
+},
+{
+    "Let me help extract the roles and create a summary for this Cause_impact event": "",
+    "Impactee": "blue trap rock",
+    "Impactor": "250,000 pounds of dynamite",
+    "Agent": "workers",
+    "Place": "Bergen Hill",
+    "Time": "From 1906 to 1910",
+    "Cause": "N/A",
+    "Impactors": "N/A",
+    "Summary": "From 1906 to 1910, workers used 250,000 pounds of dynamite to blast through blue trap rock at Bergen Hill to create the Erie Cut, a massive railroad engineering project that cost around $5 million and resulted in damage to local properties from flying rocks.",
+    "instance_id": "EN-4560-188-frame-Cause_impact"
+},
+{
+    "For this example, there is not enough information in either the Report or Source to properly annotate the Cause_motion frame roles. The text discusses a video game and its reception, but does not describe any specific instance of throwing or tossing motion with clear agents, themes, paths, etc. Therefore": "",
+    "Agent": "N/A",
+    "Theme": "N/A",
+    "Source": "N/A",
+    "Path": "N/A",
+    "Goal": "N/A",
+    "Area": "N/A",
+    "Cause": "N/A",
+    "Result": "N/A",
+    "Initial_state": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "No actual motion event is described in these texts, as they only discuss a video game called \"Pong Toss\" and its negative reception by critics.",
+    "instance_id": "EN-4519-32-frame-Cause_motion"
+},
+{
+    "Let me help with the role annotations for this Cause_to_amalgamate event": "",
+    "Agent": "Global Radio",
+    "Parts": "Heart Bedford, Heart Milton Keynes, Heart Dunstable and Heart Northants",
+    "Part_1": "N/A",
+    "Part_2": "N/A",
+    "Whole": "Heart Home Counties",
+    "Time": "16 July 2010",
+    "Place": "Dunstable",
+    "Summary": "Global Radio merged four Heart stations (Bedford, Milton Keynes, Dunstable, and Northants) into a single new station called Heart Home Counties, which began broadcasting from Dunstable on July 16, 2010, as part of a larger restructuring of the Heart network.",
+    "instance_id": "EN-1434-410-frame-Cause_to_amalgamate"
+},
+{
+    "Let me help you annotate the roles for the drying event mentioned in the report about SCOBYs (Symbiotic Culture of Bacteria and Yeast)": "",
+    "Agent": "N/A (implied but not explicitly stated)",
+    "Dryee": "SCOBYs",
+    "Time": "None",
+    "Place": "None",
+    "Cause": "None",
+    "Summary": "SCOBYs can be dehydrated for storage and future use, after which they can regenerate a new pellicle called a \"baby SCOBY.\"",
+    "instance_id": "EN-0797-178-frame-Cause_to_be_dry"
+},
+{
+    "Based on the Report and Source documents, here are the role annotations for the \"added\" event": "",
+    "Agent": "N/A",
+    "Existing_member": "N/A",
+    "New_member": "permission-related mounting options",
+    "Group": "N/A",
+    "Cause": "N/A",
+    "Time": "2.6.30",
+    "Place": "N/A",
+    "Summary": "Permission-related mounting options were added in Linux kernel version 2.6.30, which was released on June 9th, 2009.",
+    "instance_id": "EN-2914-620-frame-Cause_to_be_included"
+},
+{
+    "Agent": "Home",
+    "Time": "None",
+    "Place": "None",
+    "Cause": "None",
+    "Patient": "the contours of the category of Bruceploitation",
+    "Summary": "Home is working to sharpen the definition and boundaries of the Bruceploitation film category, which he believes has not been analyzed rigorously enough by previous scholars. Through detailed analysis of 146 films, he aims to better define this genre's characteristics and parameters.",
+    "instance_id": "EN-1188-1448-frame-Cause_to_be_sharp"
+},
+{
+    "Agent": "milk distributors",
+    "Patient": "their milk",
+    "Time": "around the turn of the 20th century",
+    "Place": "Boston",
+    "Liquid": "contaminated water",
+    "Cause": "None",
+    "Summary": "Milk distributors in Boston around the turn of the 20th century were diluting their milk with contaminated water and using the same water to clean milk bottles, leading to several cases of typhoid fever transmission.",
+    "instance_id": "EN-1703-746-frame-Cause_to_be_wet"
+},
+{
+    "Based on the source text": "",
+    "Agent": "NHS",
+    "Process": "N/A",
+    "State": "prices lower",
+    "Cause": "its own assessment of the fair value of the drugs",
+    "Time": "N/A",
+    "Place": "global",
+    "Summary": "The NHS, through its significant market power and assessment of fair drug values, maintains lower pharmaceutical prices globally, which has been a point of contention in potential UK-US trade negotiations.",
+    "instance_id": "EN-0238-147-frame-Cause_to_continue"
+},
+{
+    "Let me help you extract the roles from the text about the siege": "",
+    "Cause": "\"the price of 20 000 talars\"",
+    "Agent": "\"the Cossack-Tatar forces\"",
+    "Process": "\"the siege\"",
+    "State": "N/A",
+    "Time": "\"for the winter\"",
+    "Place": "N/A",
+    "Summary": "The Cossack-Tatar forces agreed to end their siege after receiving payment of 20,000 talars, and subsequently returned home for the winter.",
+    "instance_id": "EN-0124-767-frame-Cause_to_end"
+},
+{
+    "Agent": "KLA rebels",
+    "Experiencer": "a priest and several nuns",
+    "Time": "from Sunday to Wednesday",
+    "Place": "Devic monastery",
+    "Summary": "KLA rebels terrorized a priest and several nuns at Devic monastery over a four-day period, during which they vandalized centuries-old murals and paintings, stole cars and food, and reportedly assaulted a nun. French peacekeepers had to put the 15th-century monastery under guard following these incidents.",
+    "instance_id": "EN-0529-584-frame-Cause_to_experience"
+},
+{
+    "Agent": "the state government",
+    "Whole_patient": "Swanston Street",
+    "Pieces": "N/A",
+    "Cause": "building the Melbourne Metro rail project",
+    "Time": "for two years plus",
+    "Place": "Melbourne",
+    "Summary": "The state government's plan to tear up Swanston Street in Melbourne for over two years to build the Melbourne Metro rail project was met with controversy, with Premier Denis Napthine comparing the disruption to the Berlin Wall dividing the city.",
+    "instance_id": "EN-1696-1750-frame-Cause_to_fragment"
+},
+{
+    "Agent": "senior football players",
+    "Sound_maker": "bell",
+    "Cause": "None",
+    "Time": "after home wins or upon returning to campus following road victories",
+    "Place": "None",
+    "Summary": "Senior football players at the university maintain a tradition of ringing the bell either after home wins or when returning to campus following away victories.",
+    "instance_id": "EN-0416-1408-frame-Cause_to_make_noise"
+},
+{
+    "Project": "Harrison High School",
+    "Agent": "United States Department of Education",
+    "Time": "September 2013",
+    "Place": "N/A",
+    "Summary": "In September 2013, the United States Department of Education recognized Harrison High School as an Exemplary Improving School through the National Blue Ribbon Schools Program, acknowledging its progress in improving academic achievement.",
+    "instance_id": "EN-3125-175-frame-Cause_to_make_progress"
+},
+{
+    "From the Report and Source, I can identify": "",
+    "Theme": "puzzle pieces",
+    "Agent": "Players",
+    "Bodypart_of_agent": "None",
+    "Cause": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "Players use the Wii Remote to manipulate puzzle pieces in NEVES Plus, a WiiWare game that allows up to four players to simultaneously solve tangram-based puzzles or compete in teams of two.",
+    "instance_id": "EN-2630-629-frame-Cause_to_move_in_place"
+},
+{
+    "Agent": "Supreme Court",
+    "Process": "imprisonment",
+    "Hiatus": "N/A",
+    "Cause": "overturned the acquittal of the two teachers",
+    "Time": "February 2016",
+    "Place": "N/A",
+    "Summary": "In February 2016, the Supreme Court overturned the acquittal of two teachers and reinstated their imprisonment after the teachers had been previously acquitted. The case involved Canadian teacher Neil Bantleman and an Indonesian teaching assistant who were accused of sexually abusing students at an international school in Jakarta.",
+    "instance_id": "EN-0935-83-frame-Cause_to_resume"
+},
+{
+    "Cause": "a sentient alarm clock",
+    "Agent": "None",
+    "Sleeper": "the character",
+    "Time": "when player walks around the landscape for too long",
+    "Place": "the landscape",
+    "Summary (based on the most informative case with source present)": "",
+    "The seniors on the Student Life Committee wake up dormitory students after 4": "00 a.m. during Sneak Day, a traditional event where students are taken off-campus for a day of fun and relaxation.",
+    "instance_id": "EN-7090-1078-frame-Cause_to_wake"
+},
+{
+    "Therefore my answer is": "",
+    "Agent": "N/A",
+    "Useful_location": "N/A",
+    "Portal": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "N/A (No Change_accessibility event is described in the text)",
+    "instance_id": "EN-0291-268-frame-Change_accessibility"
+},
+{
+    "Agent": "the AFL",
+    "Event": "premiership matches",
+    "Cause": "pandemic fixture scheduling",
+    "Time": "the 2020 AFL season",
+    "Summary": "During the 2020 AFL season, the AFL shortened premiership matches from 20 minutes to 16 minutes per quarter due to pandemic fixture scheduling requirements, though this change was later reversed for the 2021 season.",
+    "instance_id": "EN-1077-224-frame-Change_event_duration"
+},
+{
+    "Agent": "Sarma Melngailis",
+    "Cause": "slim margins caused by debts and expensive ingredients",
+    "Event": "wages",
+    "Time": "N/A",
+    "Place": "Pure Food and Wine",
+    "Summary": "Sarma Melngailis, owner of Pure Food and Wine restaurant, delayed staff wages due to slim margins caused by debts and expensive ingredients, leading to employee protests and the temporary closure of the establishment.",
+    "instance_id": "EN-2608-199-frame-Change_event_time"
+},
+{
+    "Patient": "blood",
+    "Time": "following delivery",
+    "Place": "blood vessels",
+    "Summary": "During labor and delivery, blood undergoes coagulation in the blood vessels as the uterine muscles contract, which helps prevent hemorrhage by slowing blood flow.",
+    "instance_id": "EN-0012-2883-frame-Change_of_consistency"
+},
+{
+    "Let me analyze this Change_of_leadership event about the attempted impeachment of Cromwell": "",
+    "Selector": "Holles and Scottish representatives and the Earl of Essex",
+    "Old_leader": "Oliver Cromwell",
+    "New_leader": "N/A",
+    "Role": "N/A",
+    "Old_order": "N/A",
+    "Function": "N/A",
+    "Body": "Parliament",
+    "Time": "December 1644",
+    "Place": "N/A",
+    "Summary": "In December 1644, Denzil Holles, along with Scottish representatives and the Earl of Essex, attempted to impeach Oliver Cromwell as an \"incendiary between the two nations,\" though this attempt was unsuccessful. The impeachment effort was driven by Holles's personal hatred of Cromwell, whom he had accused of cowardice.",
+    "instance_id": "EN-2516-7-frame-Change_of_leadership"
+},
+{
+    "Let me help extract the roles from the Source text about the warming event": "",
+    "Item": "Greenland",
+    "Temperature": "1.5 degrees Celsius",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Greenland experienced a temperature increase of 1.5 degrees Celsius, higher than the global average increase of 0.74 degrees during the same period, demonstrating significant warming effects in the Arctic region.",
+    "instance_id": "EN-2875-15-frame-Change_of_temperature"
+},
+{
+    "Let me analyze the event from the given documents": "",
+    "Device": ".NET Framework Assistant",
+    "Agent": "Microsoft",
+    "Cause": "N/A",
+    "Time": "With the release of .NET Framework 3.5 with Service Pack 1",
+    "Place": "in Firefox",
+    "Summary": "Microsoft enabled the .NET Framework Assistant add-on in Firefox with the release of .NET Framework 3.5 SP1, which allowed ClickOnce support in Firefox 3 and later, though the initial release had an issue with the uninstall functionality.",
+    "instance_id": "EN-1652-1019-frame-Change_operational_state"
+},
+{
+    "Based on the Report and Source documents, here's my role annotation": "",
+    "Attribute": "popularity",
+    "Item": "jukebox",
+    "Initial_value": "three-quarters of the records produced in America went into jukeboxes",
+    "Final_value": "N/A",
+    "Difference": "waned",
+    "Initial_state": "three-quarters of the records produced in America went into jukeboxes",
+    "Final_state": "Billboard ceased publishing the chart and stopped collecting jukebox play data",
+    "Time": "by 1959",
+    "Place": "America",
+    "Value_range": "N/A",
+    "Summary": "The popularity of jukeboxes in America significantly declined from their peak in the 1940s when they received three-quarters of American record production, leading Billboard to stop publishing jukebox charts and collecting jukebox data by 1959.",
+    "instance_id": "EN-4930-320-frame-Change_position_on_a_scale"
+},
+{
+    "Time": "when lying down",
+    "Protagonist": "N/A",
+    "Summary": "Based on the given roles and context, while \"when lying down\" is mentioned as a timing for coughing symptoms in cardiomegaly patients, there isn't actually a Change_posture event being described here. The text is listing symptoms rather than describing someone actually changing their posture to lie down.",
+    "instance_id": "EN-2087-12-frame-Change_posture"
+},
+{
+    "Entity": "Cambridge United F.C.",
+    "State": "disarray",
+    "Time": "2004-05 season",
+    "Place": "Abbey Stadium",
+    "Summary": "During the 2004-05 season, Cambridge United F.C. fell into disarray as the club faced both relegation from the Football League and severe financial troubles, leading them to enter administration with liabilities around \u00a3900,000 and ultimately selling their Abbey Stadium home.",
+    "instance_id": "EN-2504-202-frame-Chaos"
+},
+{
+    "Let me help annotate the roles for this Choosing event based on the given text": "",
+    "Cognizer": "individuals and firms",
+    "Chosen": "to enter, leave and participate in the market",
+    "Possibilities": "N/A",
+    "Time": "N/A",
+    "Place": "the market",
+    "Summary": "In a free market economy, individuals and firms have the freedom to choose whether to enter, leave, or participate in market transactions as they desire.",
+    "instance_id": "EN-4546-305-frame-Choosing"
+},
+{
+    "Based on the given text, here are the role annotations": "",
+    "Offender": "11 members of a militant Puerto Rican nationalist group",
+    "Crime": "their role in the terror campaign by the Armed Forces of National Liberation",
+    "Executive_authority": "President Bill Clinton",
+    "Time": "September 10, 1999",
+    "Place": "United States",
+    "Summary": "President Bill Clinton granted clemency to 11 members of FALN, a Puerto Rican nationalist group, who were released from various federal prisons across the United States on September 10, 1999, after serving 14-19 years for their involvement in a terror campaign, though none were convicted of actual bombings.",
+    "instance_id": "EN-4969-404-frame-Clemency"
+},
+{
+    "Time": "None",
+    "Place": "None",
+    "State_of_affairs": "a really poor man's Blood Diamond that just happens to also feature an enormous man-eating crocodile",
+    "Summary": "A film critic observed that Primeval was coincidentally similar to Blood Diamond, with the addition of a man-eating crocodile storyline, leading to a negative review of the movie.",
+    "instance_id": "EN-4334-95-frame-Coincidence"
+},
+{
+    "Partner_1": "None",
+    "Partner_2": "None",
+    "Partners": "German Chamber of Industry and Commerce",
+    "Undertaking": "application for business setup",
+    "Time": "None",
+    "Place": "Germany",
+    "Summary": "The German Chamber of Industry and Commerce collaborates with applicants in Germany to help them succeed with their business setup applications, which requires showing access to \u20ac500,000 in investment funds and creating at least 5 job opportunities.",
+    "instance_id": "EN-2389-145-frame-Collaboration"
+},
+{
+    "Based on the source text": "",
+    "Protagonist": "John (John Coleman Burroughs)",
+    "Disease": "polio",
+    "Time": "when he was six",
+    "Place": "California",
+    "Summary": "When six-year-old John Coleman Burroughs moved to California with his family, he contracted a mild case of polio, which led his parents to remove him from Page Military Academy and have him tutored at home due to concerns about his exposure to diseases in public schools.",
+    "instance_id": "EN-2607-803-frame-Come_down_with"
+},
+{
+    "Individuals": "people",
+    "Configuration": "drum circles",
+    "Time": "on the weekends",
+    "Place": "Hippie Hill in Golden Gate Park",
+    "Party_1": "N/A",
+    "Party_2": "N/A",
+    "Summary": "People regularly gather on weekends at Hippie Hill in Golden Gate Park to form improvised drum circles, creating a constant beat for hours while expressing themselves in an environment where police maintain a lenient approach.",
+    "instance_id": "EN-0044-487-frame-Come_together"
+},
+{
+    "Entity": "the placenta",
+    "Time": "during pregnancy",
+    "Place": "in the uterus",
+    "Summary": "The placenta develops in the uterus during pregnancy, with the endometrium playing a crucial role in its formation and providing a site for the fertilized egg to implant.",
+    "Note": "I chose \"in the uterus\" as the Place since the placenta specifically develops in the endometrium which lines the uterus. I selected \"the placenta\" as the Entity since that's what's specifically mentioned as coming into existence in the text. The Time is clearly stated as \"during pregnancy.\"",
+    "instance_id": "EN-1536-1940-frame-Coming_to_be"
+},
+{
+    "Let me extract the relevant information from the Source document": "",
+    "Buyer": "Lawrence Hebner , Donald Kline , and Donald Jasper",
+    "Goods": "Talking Rain",
+    "Time": "1987",
+    "Place": "None",
+    "Summary": "In 1987, investors Lawrence Hebner, Donald Kline, and Donald Jasper acquired Talking Rain, a tiny beverage company, for $300,000. The purchase came just six months after the company was founded by John Stevens and Pete Hiskin in Bellevue, Washington.",
+    "instance_id": "EN-1138-129-frame-Commerce_buy"
+},
+{
+    "Based on the Source document, here are the role annotations": "",
+    "Buyer": "Extenze",
+    "Seller": "Front Row Motorsports",
+    "Money": "$5.4 million",
+    "Rate": "$108,000 weekly installments",
+    "Goods": "NASCAR Sprint Cup Series car sponsorship",
+    "Time": "2010",
+    "Place": "North Carolina",
+    "Summary": "Extenze entered into a $5.4 million sponsorship deal with Front Row Motorsports in 2010 to sponsor Kevin Conway's NASCAR Sprint Cup Series car, to be paid in weekly installments of $108,000, but allegedly failed to make full payments, leading to a lawsuit filed in North Carolina.",
+    "instance_id": "EN-2716-40-frame-Commerce_pay"
+},
+{
+    "Let me help you analyze this sales event from the Report and Source": "",
+    "Seller": "Toyota",
+    "Buyer": "N/A (as the text explicitly states \"no sales followed\")",
+    "Goods": "two Toyopet Tiaras",
+    "Time": "June 1962",
+    "Place": "Finland",
+    "Summary": "In June 1962, Toyota sent two Toyopet Tiaras to Finland for evaluation purposes, but despite introducing the cars to the press in October of that year, no actual sales materialized from this initial export attempt to Europe.",
+    "instance_id": "EN-2484-120-frame-Commerce_sell"
+},
+{
+    "Here's my extraction and summary based on the documents": "",
+    "Perpetrator": "Leon Beiderbecke",
+    "Crime": "lewd & lascivious act with child",
+    "Time": "April 22, 1921",
+    "Place": "a neighbor's garage",
+    "Summary": "On April 22, 1921, 18-year-old Leon Beiderbecke was arrested by Davenport police for allegedly committing a lewd and lascivious act with a 5-year-old girl named Sarah Ivens in a neighbor's garage. The case was sent to a grand jury but was ultimately dismissed at the request of the girl's father who wanted to protect his daughter from further harm.",
+    "instance_id": "EN-3151-47-frame-Committing_crime"
+},
+{
+    "Let me analyze this Communication event from the text": "",
+    "Communicator": "General Warner",
+    "Message": "even light , token US land forces would signal to an enemy that the US is physically guarding the area and can only be dislodged at the risk of war",
+    "Topic": "US military presence in the Persian Gulf",
+    "Medium": "Christian Science Monitor",
+    "Time": "April 11, 1980",
+    "Place": "N/A",
+    "Summary": "In an interview with the Christian Science Monitor on April 11, 1980, General Warner communicated that even a small US military presence on the ground would send a strong message to enemies that America was committed to protecting the area, during the context of the Iran hostage crisis.",
+    "instance_id": "EN-0262-469-frame-Communication"
+},
+{
+    "Speaker": "she [Macha]",
+    "Voice": "cries out",
+    "Message": "in pain",
+    "Time": "as she gives birth to twins on the finish line",
+    "Place": "on the finish line",
+    "Topic": "childbirth",
+    "Summary": "Macha cries out in pain as she gives birth to twins on the finish line after being forced to race against the king's horses, leading her to curse the men of Ulster with weakness.",
+    "instance_id": "EN-4986-1315-frame-Communication_noise"
+},
+{
+    "Based on the Source document": "",
+    "Speaker": "The Board of Directors",
+    "Addressee": "Stack Overflow community",
+    "Message": "we have selected Prashanth Chandrasekar as our next CEO",
+    "Topic": "new CEO selection",
+    "Trigger": "Last March, I shared that we were starting to look for a new CEO for Stack Overflow",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "The Board of Directors announced their selection of Prashanth Chandrasekar as Stack Overflow's new CEO in response to their March announcement about searching for new leadership, after reviewing almost 200 candidates.",
+    "instance_id": "EN-1104-392-frame-Communication_response"
+},
+{
+    "Based on the source text, here are the role annotations": "",
+    "Issue": "severe difficulties from the Irish Land League",
+    "Agent": "Charles Boycott",
+    "Time": "November 1881",
+    "Place": "estate of John Crichton, 3rd Earl Erne",
+    "Summary": "In November 1881, Charles Boycott faced severe difficulties from the Irish Land League on the Earl Erne's estate, leading to a situation where he couldn't run his farm without labor and required assistance from the Orange Order's Lough Mask House Relief Expedition.",
+    "instance_id": "EN-7062-642-frame-Confronting_problem"
+},
+{
+    "Let me analyze the contacting event from the Source document": "",
+    "Communicator": "Debian team",
+    "Addressee": "Open CASCADE technology",
+    "Time": "in 2009",
+    "Topic": "dual-licensing OCCT (the library)",
+    "Address": "N/A",
+    "Communication": "N/A",
+    "Place": "N/A",
+    "Summary": "In 2009, the Debian team contacted Open CASCADE technology regarding the possibility of dual-licensing OCCT library, though Open CASCADE postponed making this change in 2012.",
+    "instance_id": "EN-2404-222-frame-Contacting"
+},
+{
+    "Controlling_entity": "Helena Sanders and Hawkins",
+    "Dependent_entity": "cat populations",
+    "Controlling_situation": "trap-neuter-return (TNR)",
+    "Dependent_situation": "cat population control",
+    "Time": "1965",
+    "Place": "Italy",
+    "Controlling_variable": "N/A",
+    "Dependent_variable": "N/A",
+    "Degree": "N/A",
+    "Summary": "Helena Sanders and Hawkins pioneered the use of trap-neuter-return (TNR) in Italy to control street cat populations in Venice, with some cats being euthanized for health reasons and others being neutered with local authorities' permission.",
+    "instance_id": "EN-4922-978-frame-Control"
+},
+{
+    "Cook": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Produced_food": "N/A",
+    "Summary": "The text describes the technique of plain stir-frying rather than a specific cooking event, explaining it as one of three variations of stir-frying methods commonly used in Chinese cooking.",
+    "instance_id": "EN-0852-1613-frame-Cooking_creation"
+},
+{
+    "Agent": "Professor James Edwards",
+    "Evaluee": "his charges",
+    "Reason": "N/A",
+    "Time": "from 1956 - 1960",
+    "Place": "in a private school",
+    "Summary": "Professor James Edwards, a schoolmaster at a private school, regularly administered canings to his students during the TV series Whack-O! which ran from 1956-1960, making light of corporal punishment in educational settings.",
+    "Note": "The source document provides more context about the TV series Whack-O! and its portrayal of corporal punishment, which was the subject mentioned in the Report. I've extracted the roles specifically related to the caning events depicted in the show, choosing the most informative spans when possible.",
+    "instance_id": "EN-1443-857-frame-Corporal_punishment"
+},
+{
+    "For this event, I can identify": "",
+    "Patient": "indigo carmine indicator",
+    "Cause": "oxygen",
+    "Time": "None",
+    "Agent": "None",
+    "Place": "None",
+    "Summary": "The indigo carmine indicator gets oxidized by oxygen in the solution, changing its color from yellow to red and then green depending on oxygen concentration levels.",
+    "instance_id": "EN-1424-687-frame-Corroding_caused"
+},
+{
+    "Based on the given documents, here are the role extractions": "",
+    "Victim": "Taliban",
+    "Assailant": "Pakistan",
+    "Time": "June 2014",
+    "Place": "North Waziristan",
+    "Summary": "In June 2014, Pakistan launched a military counterattack against the Taliban in North Waziristan at China's request, which was successful in targeting the Taliban Movement of Pakistan who were hosting ETIM militants.",
+    "instance_id": "EN-4472-508-frame-Counterattack"
+},
+{
+    "Let me help break down the roles for this event based on the given documents": "",
+    "Creator": "Roberto Cantoral Garc\u00eda",
+    "Representation": "El Reloj",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Roberto Cantoral Garc\u00eda composed \"El Reloj,\" which became such a significant hit that a giant marble clock was erected in its honor outside his home in Rancho Viejo.",
+    "Note": "While the documents mention multiple songs by Cantoral and provide information about his death and residence, they don't specify when or where \"El Reloj\" was specifically created. Therefore, I've marked those roles as N/A to avoid making unsupported claims.",
+    "instance_id": "EN-1130-753-frame-Create_physical_artwork"
+},
+{
+    "Healer": "None",
+    "Patient": "children who suffered from severe speech and language disorders",
+    "Affliction": "severe speech and language disorders such as Developmental Verbal Dyspraxia , dysarthria , and oral dyspraxia",
+    "Treatment": "intensive therapy",
+    "Medication": "None",
+    "Body_part": "None",
+    "Time": "None",
+    "Place": "Nuffield Speech and Language Unit",
+    "Summary": "The Nuffield Speech and Language Unit provided intensive therapy to children with severe speech and language disorders, serving as an internationally recognized centre of excellence for treating conditions such as Developmental Verbal Dyspraxia, dysarthria, and oral dyspraxia.",
+    "instance_id": "EN-0946-511-frame-Cure"
+},
+{
+    "Agent": "a crew of 50 laborers",
+    "Item": "a limestone ledge",
+    "Pieces": "a channel three feet deep, 200 feet wide, and more than a mile long",
+    "Time": "In July 1893",
+    "Place": "Momence",
+    "Summary": "In July 1893, a crew of 50 laborers cut a channel through a limestone ledge near Momence, which had previously restricted the flow of the Kankakee River and maintained the Grand Kankakee Marsh. The work was funded by a $65,000 appropriation from the Indiana state government to help drain the marsh for agricultural use.",
+    "instance_id": "EN-1502-47-frame-Cutting"
+},
+{
+    "Agent": "None",
+    "Patient": "ligament",
+    "Cause": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "An MRI scan revealed no ligament damage in Clayton Kershaw's arm, though he was placed on the injured list and ruled out for the 2021 post-season after experiencing arm pain during a game against the Brewers.",
+    "instance_id": "EN-1448-715-frame-Damaging"
+},
+{
+    "Let me analyze each role based on the Report and Source": "",
+    "Time": "\"late 1784\"",
+    "Place": "None",
+    "Agent": "\"anyone\"",
+    "Action": "suggest it [exchange controls]",
+    "Summary": "During the 1997 Asian financial crisis, Paul Krugman daringly suggested implementing exchange controls as a solution to mitigate the crisis, despite this being an unfashionable and stigmatized approach that others were hesitant to propose.",
+    "I chose these spans because": "",
+    "instance_id": "EN-4481-985-frame-Daring"
+},
+{
+    "For these cases, I'll analyze each example": "",
+    "1. For the first example (Idaho's forced ultrasound bill)": "",
+    "Protagonist": "\"animals\"",
+    "Figure": "N/A",
+    "Time": "N/A",
+    "Summary": "Live animals were featured in the movie \"Furry Vengeance\" communicating through thought balloons and CGI-enhanced facial expressions, though their charm reportedly wore off due to repetitive actions.",
+    "2. For the second example (Ada Jessamine Shumate)": "",
+    "3. For the third example (live animals in movie)": "",
+    "instance_id": "EN-0736-222-frame-Dead_or_alive"
+},
+{
+    "From the Report and Source documents, I can identify": "",
+    "Time": "before 18 October 1597",
+    "Place": "N/A",
+    "Protagonist": "Agnes Fleming",
+    "Summary": "Agnes Fleming died before October 18, 1597. She was married to William Livingstone, 6th Lord Livingston, and had children with him.",
+    "instance_id": "EN-2008-50-frame-Death"
+},
+{
+    "State_of_affairs": "N/A",
+    "Protagonist": "N/A",
+    "Role": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "No valid destiny event to summarize.",
+    "instance_id": "EN-0332-510-frame-Destiny"
+},
+{
+    "Destroyer": "None",
+    "Patient": "most of the McAlester facility",
+    "Cause": "a three - day riot",
+    "Time": "In 1973",
+    "Place": "McAlester",
+    "Summary": "In 1973, a devastating three-day riot at McAlester resulted in the destruction of most of the facility and claimed the lives of three inmates.",
+    "instance_id": "EN-4419-40-frame-Destroying"
+},
+{
+    "Let me help annotate the roles from the Source text for the \"detached\" event": "",
+    "Agent": "N/A",
+    "Item": "a thick crystalline silicon layer",
+    "Source": "after growth",
+    "Time": "after growth",
+    "Place": "N/A",
+    "Items": "N/A",
+    "Summary": "In the EpiWafer technology, a thick crystalline silicon layer is epitaxially deposited and then detached after growth to produce a freestanding wafer of standard thickness for solar cell production.",
+    "instance_id": "EN-1179-255-frame-Detaching"
+},
+{
+    "Agent": "Glenn Sanders",
+    "Explosive": "explosives",
+    "Time": "in the early hours of Saturday morning",
+    "Place": "in his house",
+    "Summary": "Glenn Sanders, a troubled mechanic known as 'The Colonel', detonated explosives in his house in Derrinallum during a police standoff, resulting in his death and injuries to two police officers. The incident led to Australia's biggest explosives clean-up operation.",
+    "instance_id": "EN-1725-213-frame-Detonate_explosive"
+},
+{
+    "Let me help you extract the roles from this dispersal event about spreading claims regarding the White Helmets": "",
+    "Agent": "the same crowd of pro-Russia voices on the far left and far right",
+    "Individuals": "the claim, which has been repeatedly debunked",
+    "Cause": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "Pro-Russia voices from both the far left and far right spread debunked claims about the White Helmets being a fake organization after Roger Waters' accusations following the Douma chemical attack in Syria.",
+    "instance_id": "EN-0738-291-frame-Dispersal"
+},
+{
+    "Based on the Report and Source documents, here are the role annotations": "",
+    "Dodger": "EUU",
+    "Bad_entity": "TXH",
+    "Time": "11 April 2015",
+    "Place": "Moorabbin Airport",
+    "Summary": "On April 11, 2015 at Moorabbin Airport, a Cessna 172 (EUU) attempted to dodge a collision with a Piper PA-28 (TXH) that was overshooting runway 22 due to engine trouble, though the evasive action was unsuccessful and the left wing of TXH collided with EUU's tail.",
+    "instance_id": "EN-2933-937-frame-Dodging"
+},
+{
+    "Agent": "former Romano-British inhabitants",
+    "Patient": "the area around Lincoln",
+    "Time": "the fifth century",
+    "Place": "Lincoln",
+    "Summary": "The former Romano-British inhabitants continued to culturally and politically dominate the area around Lincoln through the fifth century, with their culture and institutions gradually declining and the \"Anglo-Saxon\" label becoming more appropriate towards the end of the sixth century.",
+    "instance_id": "EN-2527-532-frame-Dominate_competitor"
+},
+{
+    "Based on the text, here are the role annotations for the first jet-to-jet aerial kill mentioned": "",
+    "Agent": "Lieut Russell J. Brown",
+    "Patient": "a MiG-15",
+    "Time": "November 7, 1950",
+    "Place": "near the Yalu River",
+    "Cause": "air-to-air combat",
+    "Summary": "Lieut Russell J. Brown, flying an F-80C, shot down a MiG-15 near the Yalu River on November 7, 1950, marking the first victory in air-to-air combat between jet fighters.",
+    "instance_id": "EN-1037-414-frame-Downing"
+},
+{
+    "Earner": "factory workers",
+    "Earnings": "$80 \u2013 120 per day",
+    "Time": "None",
+    "Place": "Los Angeles-based garment factories",
+    "Summary": "Factory workers at American Apparel earn $80-120 per day, which is significantly higher than the $30-40 daily wage at most other Los Angeles-based garment factories, demonstrating the company's commitment to paying above-average wages in the industry.",
+    "instance_id": "EN-1578-32-frame-Earnings_and_losses"
+},
+{
+    "Based on the Source text, I'll extract the relevant role spans for the educational event mentioned in the Report about Whyville": "",
+    "Teacher": "James Bower",
+    "Student": "children aged 8-14",
+    "Institution": "Whyville",
+    "Subject": "science, business, art and geography",
+    "Time": "in 1999",
+    "Place": "Internet",
+    "Material": "None",
+    "Qualification": "None",
+    "Role": "None",
+    "Course": "None",
+    "Skill": "None",
+    "Precept": "None",
+    "Fact": "None",
+    "Summary": "In 1999, James Bower launched Whyville, an educational Internet platform designed to teach children aged 8-14 about various subjects including science, business, art, and geography.",
+    "instance_id": "EN-0573-2-frame-Education_teaching"
+},
+{
+    "Since this is a complex text about thankful villages, let me help identify the relevant spans for the emotion of being thankful": "",
+    "Experiencer": "the people of the village",
+    "Topic": "their incredible luck",
+    "Stimulus": "all those who served returned home",
+    "State": "None",
+    "Event": "World War I and World War II",
+    "Time": "None",
+    "Expressor": "two modest wooden plaques",
+    "Summary": "The village of Upper Slaughter and other \"thankful villages\" were grateful that all their servicemen returned alive from both World Wars, with the villagers commemorating this remarkable fortune through wooden plaques in the village hall, though they were initially reluctant to discuss their special status out of respect for less fortunate communities.",
+    "instance_id": "EN-1519-1379-frame-Emotions_by_stimulus"
+},
+{
+    "Experiencer": "Bowser",
+    "Stimulus": "ignorance",
+    "Time": "N/A",
+    "Summary": "In a comic story accompanying a CD compilation, King Bowser repeatedly expresses that \"ignorance is bliss\" while opposing Princess Toadstool's efforts to teach Yoshi and the Koopalings how to read.",
+    "instance_id": "EN-8103-176-frame-Emotions_of_mental_activity"
+},
+{
+    "Experiencer": "immigration tribunal",
+    "Topic": "Raed Salah's behavior",
+    "Stimulus": "appellant has engaged in the unacceptable behaviour of fostering hatred",
+    "State": "satisfied",
+    "Event": "immigration tribunal hearing",
+    "Time": "October 26",
+    "Expressor": "N/A",
+    "Summary": "On October 26, an immigration tribunal expressed satisfaction that Raed Salah had engaged in unacceptable behavior of fostering hatred that could lead to intercommunity violence in the UK, supporting Theresa May's decision to remove him from the country.",
+    "instance_id": "EN-4992-441-frame-Emotions_success_or_failure"
+},
+{
+    "Let me help analyze this event": "",
+    "Cause": "mob attacks",
+    "Valued_entity": "embassy premises and diplomatic personnel",
+    "Agent": "N/A",
+    "Time": "Thursday",
+    "Place": "Belgrade",
+    "Summary": "Mob attacks on several embassies in Belgrade damaged embassy premises and endangered diplomatic personnel, prompting the UN Security Council to issue a strong condemnation and remind Serbia of its obligations under the 1961 Vienna Convention to protect diplomatic missions.",
+    "instance_id": "EN-0415-693-frame-Endangering"
+},
+{
+    "Rule": "a contract or signature \"may not be denied legal effect, validity, or enforceability solely because it is in electronic form\"",
+    "Agent": "federal law",
+    "Time": "June 30, 2000",
+    "Place": "N/A",
+    "Medium": "the Electronic Signatures in Global and National Commerce Act (ESIGN)",
+    "Summary": "On June 30, 2000, federal law established through the ESIGN Act that electronic signatures cannot be denied legal effect or enforceability solely due to their electronic form, laying out guidelines for interstate commerce.",
+    "instance_id": "EN-7457-773-frame-Enforcing"
+},
+{
+    "Escapee": "N/A",
+    "Undesirable_location": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "No actual escape event is confirmed in these documents, only speculation about the possibility of SARS-CoV-2 having escaped from a lab, which remains an unconfirmed hypothesis.",
+    "instance_id": "EN-1150-191-frame-Escaping"
+},
+{
+    "Let me extract the roles from the Source document": "",
+    "Time": "Thursday November 06, 2008",
+    "Place": "Hollywood",
+    "Event": "mass protests against Proposition 8",
+    "Summary": "Following California's approval of Proposition 8 banning gay marriage, thousands of protesters marched through Hollywood, blocking traffic and forcing police intervention, with one group of about 500 protesters gathering outside CNN's local bureau.",
+    "Note": "I chose Hollywood as the specific location rather than the broader \"Los Angeles\" or \"California\" since it provides the most specific location where the main protests took place. For the event, I chose to include the context that these were protests specifically against Proposition 8, as this provides more informative context than just \"mass protests\".",
+    "instance_id": "EN-0190-129-frame-Event"
+},
+{
+    "Based on the Report and Source, here are the role annotations": "",
+    "Examiner": "ACT",
+    "Examinee": "N/A",
+    "Knowledge": "English, mathematics, reading, and scientific reasoning",
+    "Qualification": "N/A",
+    "Examination": "The ACT test",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "The ACT test is a comprehensive examination that assesses four academic skill areas: English, mathematics, reading, and scientific reasoning, with an optional direct writing component, administered by ACT as a college entrance testing program.",
+    "instance_id": "EN-0634-1419-frame-Examination"
+},
+{
+    "Exchanger_1": "Boston Celtics",
+    "Exchanger_2": "Phoenix",
+    "Theme_1": "Joe Johnson, Randy Brown and Milt Palacio and a Boston's No. 1 pick in the upcoming draft",
+    "Theme_2": "Rodney Rogers and Tony Delk",
+    "Time": "Wednesday",
+    "Place": "N/A",
+    "Exchangers": "N/A",
+    "Themes": "N/A",
+    "Summary": "The Boston Celtics traded Joe Johnson, Randy Brown, Milt Palacio, and a first-round draft pick to Phoenix in exchange for Rodney Rogers and Tony Delk, with the deal giving the Celtics players who can score from the outside while adding muscle to their frontline.",
+    "instance_id": "EN-1679-55-frame-Exchange"
+},
+{
+    "Plan": "ban the breeding of whales and dolphins in captivity at the Vancouver Aquarium",
+    "Agent": "Vision Vancouver-dominated board",
+    "Time": "July",
+    "Place": "Vancouver",
+    "Medium": "bylaw amendment",
+    "Summary": "In July, the Vision Vancouver-dominated board voted to ban cetacean breeding at the Vancouver Aquarium through a bylaw amendment, but the amendment failed to pass at the final meeting of the outgoing park board commissioners.",
+    "instance_id": "EN-0659-670-frame-Execute_plan"
+},
+{
+    "Executed": "111,091 Poles",
+    "Time": "August 1937",
+    "Place": "in or near the Soviet Union",
+    "Executioner": "NKVD",
+    "Summary": "In August 1937, the NKVD executed 111,091 Poles living in or near the Soviet Union during the \"Polish Operation\", where they were accused of espionage for Poland.",
+    "instance_id": "EN-2520-597-frame-Execution"
+},
+{
+    "Based on the source document, here are the role annotations": "",
+    "Agent": "patients with depression",
+    "Time": "for about 30 minutes a day",
+    "Place": "on a treadmill or by strolling around the block",
+    "Summary": "Patients with depression who had been using antidepressants participated in an exercise study, walking on a treadmill or around the block for about 30 minutes a day, which resulted in a 29.5% remission rate for their depression symptoms.",
+    "instance_id": "EN-1204-78-frame-Exercising"
+},
+{
+    "From the Source document, I can identify the following roles": "",
+    "Body_part": "leg",
+    "Time": "1969",
+    "Experiencer": "Justin McCarthy",
+    "Place": "N/A",
+    "Summary": "Justin McCarthy broke his leg in a motorcycle accident in 1969, which ruled him out of the All-Ireland final and ultimately led to his transition into coaching.",
+    "Note": "The Source article provides more detailed information about the event mentioned in the Report, confirming that it was a motorcycle accident that resulted in McCarthy breaking his leg, which had significant consequences for his career.",
+    "instance_id": "EN-0647-199-frame-Experience_bodily_harm"
+},
+{
+    "Based on the Source document, here are the role annotations": "",
+    "Explosive": "a bomb fashioned out from an 81-mm mortar",
+    "Time": "noontime",
+    "Place": "a public market in Tacurong City",
+    "Summary": "A bomb made from an 81-mm mortar exploded at noontime in a public market in Tacurong City, killing two women (Conchita Magon and Isabel Mariano) and injuring four others, with soldiers and police tracking down two men seen near the restrooms before the detonation.",
+    "instance_id": "EN-1481-768-frame-Explosion"
+},
+{
+    "Authorities": "N/A",
+    "Current_jurisdiction": "N/A",
+    "Crime_jurisdiction": "N/A",
+    "Suspect": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Since there is no clear extradition event to summarize, I cannot provide a summary.",
+    "instance_id": "EN-5052-149-frame-Extradition"
+},
+{
+    "Experiencer": "parents",
+    "Topic": "parent abuse",
+    "Stimulus": "abuse from one's child",
+    "Expressor": "None",
+    "State": "fear, shame, guilt and despair",
+    "Time": "in the short term",
+    "Summary": "Parents experiencing abuse from their children suffer profound physical and psychological impacts, particularly experiencing emotions of fear, shame, guilt and despair in the short term, which affects both the parent's and other family members' well-being.",
+    "instance_id": "EN-4944-802-frame-Fear"
+},
+{
+    "Let me help you extract the role spans for the Filling (Painted) event": "",
+    "Agent": "N/A",
+    "Theme": "small shamrock",
+    "Goal": "the starboard nose undercarriage door",
+    "Time": "Before they departed",
+    "Place": "at Wisley",
+    "Cause": "as a sign of good luck",
+    "Summary": "Before departing at Wisley, a small shamrock was painted on the starboard nose undercarriage door of the aircraft as a sign of good luck by Aer Lingus personnel, and this shamrock remained on the aircraft throughout its life and is still displayed at the Ferrymead Museum.",
+    "instance_id": "EN-2446-114-frame-Filling"
+},
+{
+    "Speaker": "Al-Nassr",
+    "Payer": "Fabi\u00e1n Estoyanoff",
+    "Reason": "assaulting a player from the guest team",
+    "Fine": "50% of his salary",
+    "Time": "Tuesday",
+    "Place": "N/A",
+    "Summary": "Following a 3-1 home defeat in the AFC Champions League, Al-Nassr player Fabi\u00e1n Estoyanoff attacked opposing player Nam Tae-hee in the tunnel, throwing punches before being dragged away, which resulted in his club fining him 50% of his salary for the remainder of the season.",
+    "instance_id": "EN-0690-1187-frame-Fining"
+},
+{
+    "instance_id": "EN-1453-33-frame-Firing"
+},
+{
+    "Self_mover": "Michael Reynolds",
+    "Source": "Hottie Shots Espresso stand in Kent",
+    "Path": "None",
+    "Goal": "None",
+    "Direction": "None",
+    "Time": "Tuesday morning",
+    "Place": "in Kent, Washington",
+    "Summary": "Michael Reynolds, a 33-year-old ex-convict, fled from Hottie Shots Espresso stand in Kent, Washington on Tuesday morning after attempting to rape bikini barista Madeline Guinto at knifepoint, when his attack was interrupted by a car pulling into the drive-through.",
+    "instance_id": "EN-0359-163-frame-Fleeing"
+},
+{
+    "Let me extract the roles from the Source document": "",
+    "Agent": "a Tel Aviv collector, Oded Golan, Robert Deutsch, Shlomo Cohen, and Faiz al-Amaleh",
+    "Forgery": "ossuary with inscription \"James, son of Joseph, brother of Jesus\"",
+    "Standard": "authentic biblical artifacts",
+    "Time": "during the last 20 years",
+    "Place": "Israel",
+    "Summary": "A sophisticated forgery ring in Israel, led by Oded Golan and three others, created fake biblical artifacts including an ossuary supposedly containing James' bones, by modifying authentic artifacts with false inscriptions and artificial aging over a 20-year period, deceiving experts and museums worldwide.",
+    "instance_id": "EN-0571-163-frame-Forging"
+},
+{
+    "Partner_1": "Andrew Chan",
+    "Partner_2": "Febyanti Herewila",
+    "Partners": "None",
+    "Time": "27 April 2015",
+    "Place": "Nusakambangan prison",
+    "Summary": "Andrew Chan married Febyanti Herewila, whom he met while she was doing outreach work as an Indonesian pastor at Kerobokan jail, on April 27, 2015 at Nusakambangan prison, during what would be his final days before execution.",
+    "instance_id": "EN-7444-444-frame-Forming_relationships"
+},
+{
+    "Based on the Source document, here are the role annotations for the herding event mentioned in the Report": "",
+    "Aggregate": "livestock",
+    "Agent": "the Ogoni",
+    "Individuals": "N/A",
+    "Time": "N/A",
+    "Place": "Ogoniland",
+    "Summary": "The Ogoni people, as part of their traditional livelihood in Ogoniland, engaged in livestock herding along with other activities like agriculture, fishing, and palm oil cultivation.",
+    "instance_id": "EN-4068-302-frame-Gathering_up"
+},
+{
+    "Let me help format the answer for each role based on the Report and Source": "",
+    "Communicator": "N/A",
+    "Addressee": "N/A",
+    "Message": "controlling the interface",
+    "Body_part": "hand and body",
+    "Indicated_entity": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "The ZCam webcam was designed as a game controller that uses gesture recognition to interpret hand and body movements for controlling the interface, offering an alternative to traditional 2D-based computer vision approaches.",
+    "instance_id": "EN-0284-1203-frame-Gesture"
+},
+{
+    "Employee": "Mr. T",
+    "Employer": "Gold Promise",
+    "Position": "spokesman",
+    "Task": "\"appear in a series of television ads\"",
+    "Time": "\"2010\"",
+    "Place": "N/A",
+    "Summary": "In 2010, Mr. T was hired as a spokesman for Gold Promise, a gold-buying company, where he would appear in television ads promoting their services by demonstrating how he sells his excess chains and encouraging customers to mail their unwanted gold to Gold Promise for cash.",
+    "instance_id": "EN-3053-918-frame-Get_a_job"
+},
+{
+    "Let me analyze this case. From the source document, I can identify": "",
+    "Recipient": "The Harmon Foundation",
+    "Theme": "recognition for African-American creativity and ingenuity",
+    "Time": "1925",
+    "Place": "N/A",
+    "Summary": "In 1925, the Harmon Foundation gained recognition as one of the first major supporters of African-American creativity by establishing cash awards for distinguished achievements in eight fields, becoming a pioneering institution in providing national recognition for African-American artists during the Harlem Renaissance.",
+    "instance_id": "EN-0763-7-frame-Getting"
+},
+{
+    "Theme": "RNA chains",
+    "Resultant_configuration": "double helical tract",
+    "Place": "back on themselves",
+    "Time": "N/A",
+    "Summary": "RNA chains fold back on themselves to form a double helical tract called the 'stem', with unpaired nucleotides forming a single-stranded region called the 'loop', creating what is known as a stem-loop or hairpin loop structure.",
+    "instance_id": "EN-0398-707-frame-Go_into_shape"
+},
+{
+    "Based on the source document, here are the role annotations": "",
+    "Grinding_cause": "None",
+    "Grinder": "several watermills",
+    "Patient": "corn",
+    "Time": "down the centuries",
+    "Place": "south of Redbourn",
+    "Summary": "Down the centuries, several watermills south of Redbourn were used for grinding corn, among other industrial uses such as paper making, fulling cloth, silk spinning and diamond lapping.",
+    "instance_id": "EN-0968-705-frame-Grinding"
+},
+{
+    "Place": "in their basement",
+    "Agent": "homeowners",
+    "Patient": "themselves",
+    "Body_part": "N/A",
+    "Time": "N/A",
+    "Summary": "Homeowners in western Pennsylvania would cleanse themselves in their basement after entering from their yard or garage, taking advantage of basement entryways made accessible by the region's steep topography.",
+    "instance_id": "EN-0523-531-frame-Grooming"
+},
+{
+    "Let me help break down the roles from the Source document": "",
+    "Communicator": "Her Majesty Queen Elizabeth II",
+    "Individual": "Anna Meares",
+    "Event": "the start of the relay",
+    "Medium": "the distinctive loop-design Queen's Baton",
+    "Time": "Monday",
+    "Place": "Buckingham Palace",
+    "Summary": "Queen Elizabeth II officially launched the 2018 Commonwealth Games baton relay at Buckingham Palace by placing her message inside the distinctive loop-design baton and handing it to Olympic champion cyclist Anna Meares, marking the start of a 388-day journey across 71 countries.",
+    "instance_id": "EN-3126-1095-frame-Heralding"
+},
+{
+    "Let me extract the roles from the report and source about Frank Selee's hiring of talented players": "",
+    "Employee": "Frank Chance, Joe Tinker, and Johnny Evers",
+    "Employer": "Frank Selee",
+    "Task": "signing and developing the talents",
+    "Position": "N/A",
+    "Field": "baseball",
+    "Time": "N/A",
+    "Place": "Chicago",
+    "Summary": "Frank Selee, as the manager of the Chicago Cubs, hired and developed the talents of Frank Chance, Joe Tinker, and Johnny Evers, who would later become one of the greatest infields in baseball history and lead the Cubs to multiple pennants and World Series championships.",
+    "instance_id": "EN-2953-358-frame-Hiring"
+},
+{
+    "Event": "qualifying for the final of javelin throw competition in the Tokyo Olympics",
+    "Entity": "Arshad Nadeem",
+    "Time": "2020",
+    "Place": "Tokyo",
+    "Summary": "Arshad Nadeem made history by becoming the first Pakistani athlete to qualify for a track and field final at the Olympics, throwing 85.16m in the javelin competition at the 2020 Tokyo Olympics.",
+    "instance_id": "EN-2397-149-frame-Historic_event"
+},
+{
+    "Target": "N/A",
+    "Agent": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "No actual shooting event occurred in this text. The phrase is used figuratively by game director Josef Fares to express his strong opposition to NFTs in gaming.",
+    "instance_id": "EN-2441-1467-frame-Hit_target"
+},
+{
+    "Side_1": "RVD",
+    "Side_2": "Abyss",
+    "Sides": "N/A",
+    "Issue": "Abyss manhandling TNA president Dixie Carter",
+    "Purpose": "to face Abyss at Bound for Glory",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "After Abyss manhandled TNA president Dixie Carter, RVD intervened and threatened to quit TNA if he wasn't allowed to face Abyss at Bound for Glory, preventing Abyss from being fired by Bischoff.",
+    "instance_id": "EN-1110-397-frame-Hostile_encounter"
+},
+{
+    "Let me extract the roles from the source text": "",
+    "Responsible_party": "all staff and pre-K-12 students",
+    "Duty": "must wear masks in common areas and in classrooms when social distancing is not feasible",
+    "Obligator": "CFISD",
+    "Situation": "COVID-19 pandemic",
+    "Principle": "CFISD's LEAD Safely protocols and procedures",
+    "Time": "this school year",
+    "Place": "CFISD",
+    "Summary": "Due to the COVID-19 pandemic, CFISD required all staff and pre-K-12 students to wear masks in common areas and classrooms where social distancing wasn't feasible, maintaining these protocols even after Governor Abbott rescinded the statewide mask mandate.",
+    "instance_id": "EN-0758-700-frame-Imposing_obligation"
+},
+{
+    "Based on the Report and Source, here are the role annotations": "",
+    "Prisoner": "Sullivan",
+    "Prison": "room",
+    "Authorities": "Anderson",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "John Murray Anderson locked composer Henry Sullivan in a room with a piano and threatened to keep him there until he created a hit song, resulting in the successful \"I May Be Wrong, But I Think You're Wonderful.\"",
+    "instance_id": "EN-4452-286-frame-Imprisonment"
+},
+{
+    "Entity": "standards",
+    "Time": "N/A",
+    "Place": "there (The Jewish Chronicle)",
+    "Summary": "The Jewish Chronicle's editorial standards were criticized as \"shockingly low\" by nine complainants who had either been libelled by the paper or had their complaints about inaccurate reporting upheld by regulators between 2018 and 2021. They called for improvements to prevent further victims and misleading of readers.",
+    "instance_id": "EN-2198-24-frame-Improvement_or_decline"
+},
+{
+    "instance_id": "EN-0527-944-frame-Ingest_substance"
+},
+{
+    "Let me help break this down based on the event keywords \"feeding\" from the Report": "",
+    "Ingestor": "very young calves",
+    "Ingestibles": "infected protein supplements",
+    "Time": "N/A",
+    "Place": "Britain",
+    "Summary": "In Britain, very young calves were fed infected protein supplements instead of their mothers' milk, which contributed to the spread of BSE disease along with reduced rendering temperatures.",
+    "instance_id": "EN-0507-809-frame-Ingestion"
+},
+{
+    "Theme": "the squid",
+    "Holding_location": "the mantle cavity",
+    "Agent": "N/A",
+    "Cause": "stress and confinement of shipboard aquaria",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "The squid exhibits a behavior where it inks into its mantle cavity when disturbed, initially thought to be due to stress and confinement in shipboard aquaria, but later observed in natural conditions from submersibles.",
+    "instance_id": "EN-2865-14-frame-Inhibit_movement"
+},
+{
+    "Self_mover": "General Howe and the majority of his force",
+    "Source": "Kennett Square",
+    "Path": "the river at the unguarded ford",
+    "Goal": "north of Washington's force",
+    "Direction": "north of Wistar's Ford",
+    "Time": "mid-afternoon",
+    "Path_shape": "N/A",
+    "Place": "Brandywine River",
+    "Summary": "General Howe and his British forces outmaneuvered Washington by fording the Brandywine River at an unguarded crossing north of Wistar's Ford during mid-afternoon, having marched from Kennett Square to outflank the American position and ultimately capture Philadelphia.",
+    "instance_id": "EN-5505-1087-frame-Intentional_traversing"
+},
+{
+    "Act": "decide what to do with the memorial and the statue of Robert E. Lee",
+    "Agent": "task force",
+    "Place": "Dallas",
+    "Time": "N/A",
+    "Summary": "Following the wave of Confederate monument removals in 2017, the City of Dallas convened a task force to determine the fate of both the Confederate memorial and Robert E. Lee statue in Lee Park.",
+    "instance_id": "EN-0662-65-frame-Intentionally_act"
+},
+{
+    "Based on the given text, for the event \"make a rescue package\", here are the role annotations": "",
+    "Creator": "Dubai government",
+    "Created_entity": "rescue package",
+    "Time": "N/A",
+    "Place": "Dubai",
+    "Summary": "The Dubai government failed to create a rescue package for Dubai World, a state-owned holding company with $60 billion in liabilities, which was at risk of defaulting on its bond repayments.",
+    "instance_id": "EN-4739-25-frame-Intentionally_create"
+},
+{
+    "Interceptor": "Saudi Patriot",
+    "Theme": "long - range ballistic missile",
+    "Time": "October28 , 2016",
+    "Place": "near Mecca",
+    "Summary": "A Saudi Patriot intercepted a long-range ballistic missile near Mecca on October 28, 2016, which was reportedly fired by Yemen's Houthi rebels.",
+    "instance_id": "EN-5192-36-frame-Intercepting"
+},
+{
+    "Let me help parse this example. From the text, we can identify the following roles for the Interrupt_process event": "",
+    "Cause": "MPs",
+    "Process": "the EU referendum vote for Brexit",
+    "Actor": "None",
+    "Time": "following the Brexit vote",
+    "Place": "None",
+    "Summary": "Following the Brexit vote, there were concerns that MPs might attempt to reverse or mitigate the Brexit referendum result, which led to strong criticism from the Daily Mail against those trying to potentially interrupt the Brexit process.",
+    "instance_id": "EN-0109-1061-frame-Interrupt_process"
+},
+{
+    "Let me analyze these examples": "",
+    "For Example 1": "",
+    "Time": "25 to 30 years after the original films",
+    "Invader": "Yuuzhan Vong",
+    "Land": "the entire galaxy",
+    "Place": "N/A",
+    "Summary": "The Yuuzhan Vong, a powerful alien race, launched an invasion of the entire Star Wars galaxy approximately 25-30 years after the original films, as chronicled in Del Rey's 19-book series The New Jedi Order.",
+    "For Example 2": "",
+    "For Example 3": "",
+    "For Example 4": "",
+    "instance_id": "EN-1155-1694-frame-Invading"
+},
+{
+    "Let me extract the roles from the Source document": "",
+    "Experiencer": "Martin Anderson",
+    "Topic": "Jenny's career-choice at the conclusion of The Doctor's Daughter",
+    "Stimulus": "the big surprise at Jenny's career-choice at the conclusion",
+    "Expressor": "N/A",
+    "State": "N/A",
+    "Time": "N/A",
+    "Summary": "Martin Anderson was surprised by Jenny's unexpected career choice revealed at the end of The Doctor's Daughter episode, which he considered more significant than the \"cheap trick\" of reviving her character after death.",
+    "instance_id": "EN-0333-273-frame-Just_found_out"
+},
+{
+    "Let me help extract the roles and create a summary for this kidnapping event": "",
+    "Perpetrator": "a team of Nigerians and Israelis",
+    "Victim": "Umaru Dikko",
+    "Time": "In London in 1984",
+    "Place": "Bayswater in London",
+    "Summary": "In 1984, a team of Nigerians and Israelis attempted to kidnap former Nigerian minister Umaru Dikko from his home in Bayswater, London, by bundling him into a transit van and attempting to smuggle him back to Nigeria in a crate. The plot was foiled when customs officer Charles David Morrow discovered Mr. Dikko drugged and unconscious in a crate at Stansted Airport before the crate could be loaded onto a Nigerian Airways plane.",
+    "instance_id": "EN-1273-77-frame-Kidnapping"
+},
+{
+    "Based on the Source document, I'll extract the relevant roles for the killing event that's connected to the criminal charges mentioned in the Report": "",
+    "Killer": "Giorgos Roupakias",
+    "Victim": "rapper Pavlos Fyssas",
+    "Cause": "N/A",
+    "Means": "stabbed",
+    "Instrument": "N/A",
+    "Time": "September 2013",
+    "Place": "Piraeus",
+    "Summary": "In September 2013, Golden Dawn supporter Giorgos Roupakias murdered rapper Pavlos Fyssas by stabbing him in Piraeus, which became a key event leading to the criminal investigation and eventual conviction of Golden Dawn's leadership.",
+    "instance_id": "EN-0002-599-frame-Killing"
+},
+{
+    "Authority": "CART officials",
+    "Finding": "he was permitted to drive in a protective hand brace and use a modified steering wheel",
+    "Case": "Greg Moore's fitness to drive after breaking his finger in a motor-scooter accident",
+    "Defendant": "Greg Moore",
+    "Time": "later that day",
+    "Place": "N/A",
+    "Summary": "After breaking his finger in a motor-scooter accident, Greg Moore was judged by CART officials to be fit to drive following a six-lap test session and two medical consultations, allowing him to compete with a protective hand brace and modified steering wheel, though he was required to start from the back of the grid.",
+    "instance_id": "EN-5110-450-frame-Legal_rulings"
+},
+{
+    "Lender": "San Jose Earthquakes",
+    "Borrower": "FC Tampa Bay",
+    "Theme": "defender/midfielder Justin Morrow",
+    "Time": "July 14, 2011",
+    "Place": "N/A",
+    "Summary": "San Jose Earthquakes loaned defender/midfielder Justin Morrow to FC Tampa Bay on July 14, 2011 for the next few weeks, marking his second loan spell with the club after a previous stint in September 2010.",
+    "instance_id": "EN-5077-817-frame-Lending"
+},
+{
+    "Agent": "American Association of University Professors",
+    "Cause": "None",
+    "Range_of_options": "academic freedom",
+    "Characteristic": "controversial matters that are unrelated to the subject discussed",
+    "Time": "1940",
+    "Place": "United States",
+    "Summary": "In 1940, the American Association of University Professors established limitations on academic freedom in the United States, specifically requiring teachers to avoid introducing controversial matters unrelated to their subject matter in the classroom.",
+    "instance_id": "EN-0068-272-frame-Limiting"
+},
+{
+    "Agent": "Farnborough District Motor Club",
+    "Event": "rallies , autocross , sprint , hillclimbing events",
+    "Place": "N/A",
+    "Scheduled_time": "throughout the year",
+    "Time": "N/A",
+    "Summary": "The Farnborough District Motor Club organizes various motorsport events including rallies, autocross, sprint, and hillclimbing events throughout the year, continuing their long tradition of motorsport activities since their formation in 1958.",
+    "instance_id": "EN-4006-53-frame-Making_arrangements"
+},
+{
+    "Manipulator": "the devil",
+    "Victim": "Rory Alec",
+    "Resulting_action": "had an affair",
+    "Time": "this year",
+    "Place": "N/A",
+    "Goods": "N/A",
+    "Summary": "According to Wendy Alec, the devil manipulated her husband Rory Alec into having an affair with a divorced jazz musician, leading to his stepping down from God TV and the end of their 27-year marriage.",
+    "instance_id": "EN-0178-829-frame-Manipulate_into_doing"
+},
+{
+    "Let me extract the relevant role fillers from the source text": "",
+    "Agent": "male locust",
+    "Entity": "female locust",
+    "Bodypart_of_agent": "front pair of legs",
+    "Time": "3 to 14 h",
+    "Place": "None",
+    "Summary": "During copulation, a male locust grips a female locust with his front pair of legs for 3 to 14 hours to enable the transfer of spermatozoa for egg fertilization.",
+    "instance_id": "EN-2758-942-frame-Manipulation"
+},
+{
+    "Based on the Source document, here are the role annotations": "",
+    "Producer": "Chester Moor Hall",
+    "Product": "the achromatic lens",
+    "Factory": "N/A",
+    "Time": "1729",
+    "Place": "N/A",
+    "Summary": "Chester Moor Hall invented the achromatic lens in 1729 by combining crown glass and flint glass, which he used to build the first refracting telescope free from chromatic aberration.",
+    "instance_id": "EN-0856-229-frame-Manufacturing"
+},
+{
+    "Based on the source document": "",
+    "Mass_theme": "refugees",
+    "Source": "Northern Ireland",
+    "Path": "across the border",
+    "Goal": "the Republic",
+    "Time": "in August 1969",
+    "Place": "Ireland",
+    "Area": "counties convenient to the border",
+    "Direction": "None",
+    "Summary": "In August 1969, amid the Northern Ireland riots that led to the Troubles, refugees from Northern Ireland streamed across the border into the Republic of Ireland, with the initial wave consisting of nationalist families fleeing violence and seeking safety.",
+    "instance_id": "EN-2843-780-frame-Mass_motion"
+},
+{
+    "Based on the source text, here are the role extractions for the military operation": "",
+    "Force": "IDF reserve armoured division",
+    "Area": "Lebanon",
+    "Opponent": "Lebanese militias",
+    "Goal": "enforce council resolutions calling on the Lebanese government to disarm all militias within its borders and to extend its authority throughout its territory",
+    "Time": "N/A",
+    "Place": "southern Lebanon and its border with Israel",
+    "Summary": "Israel is preparing for large scale operations in Lebanon by calling up an IDF reserve armoured division, with the goal of enforcing UN Security Council resolutions to disarm Lebanese militias and extend Lebanese government authority throughout the territory, particularly in southern Lebanon and along the Israeli border.",
+    "instance_id": "EN-4953-62-frame-Military_operation"
+},
+{
+    "Theme": "the depression/Tropical Storm Odette",
+    "Source": "None",
+    "Path": "between a ridge over the eastern Caribbean Sea and a mid-latitude trough",
+    "Goal": "None",
+    "Area": "None",
+    "Distance": "None",
+    "Direction": "east-northeast",
+    "Time": "December 4",
+    "Place": "Caribbean Sea",
+    "Summary": "Tropical Storm Odette formed in the Caribbean Sea on December 4, moving in an east-northeast direction between a ridge over the eastern Caribbean Sea and a mid-latitude trough. The storm developed a central dense overcast with a well-defined cloud band around its center.",
+    "instance_id": "EN-7440-1-frame-Motion"
+},
+{
+    "Area": "Hiroshima",
+    "Goal": "N/A",
+    "Path": "N/A",
+    "Theme": "the Little Boy bomb",
+    "Source": "N/A",
+    "Direction": "N/A",
+    "Time": "August 31, 1946",
+    "Place": "Japan",
+    "Summary": "John Hersey's book \"Hiroshima\" narrated the stories of six bomb survivors following the dropping of the Little Boy bomb in Hiroshima, Japan. The account was first published in The New Yorker magazine on August 31, 1946, detailing the immediate and long-term effects of the atomic bombing on the survivors.",
+    "instance_id": "EN-1537-1419-frame-Motion_directional"
+},
+{
+    "Influencing_entity": "No\u00ebl Coward",
+    "Dependent_entity": "culture in the English-speaking world",
+    "Influencing_variable": "N/A",
+    "Dependent_situation": "N/A",
+    "Dependent_variable": "N/A",
+    "Influencing_situation": "N/A",
+    "Degree": "significant",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "No\u00ebl Coward, a prolific playwright, actor, and director, had a significant impact on English-speaking culture through his personal style, theatrical works, and public persona.",
+    "instance_id": "EN-4441-638-frame-Objective_influence"
+},
+{
+    "Driver": "Haupipi",
+    "Vehicle": "Aotea canoe",
+    "Source": "None",
+    "Path": "None",
+    "Goal": "New Zealand",
+    "Area": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "Haupipi arrived in New Zealand on the Aotea canoe after his first canoe, Kurahaup\u014d, was wrecked, leading to one origin story of the name Ng\u0101ti Hau.",
+    "instance_id": "EN-0725-670-frame-Operate_vehicle"
+},
+{
+    "Let me extract the roles from the Source document regarding the BingoBox operation event": "",
+    "Place": "Yangpu's Auchan Shopping Center",
+    "Operator": "Auchan",
+    "System": "BingoBox convenience stores",
+    "Time": "2017",
+    "Summary": "Since 2017, Auchan has been operating automated BingoBox convenience stores in China, starting with a location at Yangpu's Auchan Shopping Center, which functions without human staff using smartphone technology and automated checkout systems.",
+    "instance_id": "EN-2042-348-frame-Operating_a_system"
+},
+{
+    "Based on the Source text": "",
+    "Experiencer": "UK Anime Network",
+    "Other": "Rebuild's Asuka",
+    "Situation": "her character being more human",
+    "Time": "N/A",
+    "Summary": "UK Anime Network found the Rebuild version of Asuka's character to be more relatable and human compared to her counterpart in the classic anime series, particularly noting her ability to allow others to close the emotional distance she exhibits.",
+    "instance_id": "EN-1336-1077-frame-Others_situation_as_stimulus"
+},
+{
+    "Time": "eventually",
+    "Authority": "BYU administration",
+    "Place": "BYU",
+    "Offender": "rape victims",
+    "Offense": "N/A",
+    "Summary": "BYU administration will grant Honor Code amnesty to rape victims, allowing them immunity from Honor Code investigations when reporting sexual assault cases.",
+    "instance_id": "EN-0470-816-frame-Pardon"
+},
+{
+    "Let me extract the roles from the Source": "",
+    "Perpetrator": "Mohammed Ali Hammadi",
+    "Vehicle": "TWA Flight 847",
+    "Victim": "Robert Stethem",
+    "Time": "June 14, 1985",
+    "Place": "shortly after takeoff from Athens",
+    "Summary": "Mohammed Ali Hammadi, an alleged Hezbollah member, hijacked TWA Flight 847 from Athens to Rome on June 14, 1985, during which they tortured and killed 23-year-old U.S. Navy diver Robert Stethem, throwing his body onto the tarmac in Beirut.",
+    "instance_id": "EN-2244-15-frame-Piracy"
+},
+{
+    "Agent": "None",
+    "Theme": "Horace Mann Middle School",
+    "Goal": "California's 5% lowest-achieving schools list",
+    "Time": "March 2010",
+    "Place": "None",
+    "Cause": "None",
+    "Summary": "In March 2010, Horace Mann Middle School was designated as one of California's 5% lowest-achieving schools, requiring the school to either close, convert to a charter school, or undergo a complete staff overhaul including replacing the principal.",
+    "instance_id": "EN-1441-71-frame-Placing"
+},
+{
+    "Let me analyze the roles from the Report text": "",
+    "Agent": "Karen Black",
+    "Simulated_entity": "Hitchcock",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "During an interview, actress Karen Black performed vocal impressions of Alfred Hitchcock, effectively becoming his vocal double while maintaining her own distinct voice that allowed listeners to recognize both personas simultaneously.",
+    "Note": "While the Source provides more context about this being part of a sound piece installation in a gallery in Brussels, I've kept to the information presented in the Report as per the instructions, since that contains the core event of the impersonation being discussed.",
+    "instance_id": "EN-1523-610-frame-Posing_as"
+},
+{
+    "Action": "riding across or down a sand dune while standing on a board",
+    "Agent": "None",
+    "Place": "sand dunes",
+    "Occasion": "None",
+    "Time": "None",
+    "Summary": "Sandboarding is an extreme sport that involves riding across or down sand dunes while standing on a specialized board, similar to snowboarding but performed on sandy terrain rather than snow.",
+    "instance_id": "EN-4033-191-frame-Practice"
+},
+{
+    "Based on the Report and Source documents": "",
+    "Precipitation": "heavy rainfall",
+    "Place": "Madagascar's east coast",
+    "Time": "two months earlier",
+    "Summary": "Tropical Storm Gamede brought heavy rainfall and gusty winds to Madagascar's east coast, affecting areas that had previously been impacted by Tropical Storm Clovis two months prior. This was the fourth tropical cyclone to hit Madagascar in a two-month period.",
+    "instance_id": "EN-0008-1246-frame-Precipitation"
+},
+{
+    "Experiencer": "Tony Rosato",
+    "Time": "5 May 2005",
+    "Place": "None",
+    "Situation": "criminal harassment of his wife Leah, who asserted that his deteriorating mental health had caused her to fear for her safety and that of the couple's infant daughter",
+    "Summary": "On May 5th, 2005, Tony Rosato was arrested and charged with criminal harassment as his wife Leah feared for her and their infant daughter's safety due to his deteriorating mental health.",
+    "instance_id": "EN-0968-193-frame-Predicament"
+},
+{
+    "Let me analyze the text and extract the role spans from the Source": "",
+    "Location": "Jill Johnson's 1996 album Sugartree",
+    "Entity": "English version of the song",
+    "Time": "1996",
+    "Summary": "An English version of Niklas Str\u00f6mstedt's \"En g\u00e5ng i livet\" appeared on Jill Johnson's 1996 album Sugartree.",
+    "instance_id": "EN-2705-764-frame-Presence"
+},
+{
+    "Let me extract the roles from the source with respect to the event described in the Report about the Cladh Hallan mummies": "",
+    "Agent": "Bronze Age Britons",
+    "Medium": "peat bog",
+    "Patient": "two mummified Bronze Age bodies",
+    "Time": "around 1,600 BC (for the male) and 1,300 BC (for the female)",
+    "Place": "Cladh Hallan on the Hebridean Island of South Uist",
+    "Summary": "Bronze Age Britons preserved two bodies through peat bog mummification at Cladh Hallan on South Uist island, with the male dating to around 1,600 BC and the female to 1,300 BC, marking the first evidence of deliberate mummification in ancient Britain.",
+    "instance_id": "EN-1497-1042-frame-Preserving"
+},
+{
+    "Process": "the tie",
+    "Time": "Sunday night",
+    "Place": "Hamburg",
+    "Summary": "The Netherlands won the bwin World Cup of Darts title in Hamburg on Sunday night, defeating England before their tie was completed, with Michael van Gerwen and Raymond van Barneveld securing victory through three successive Singles wins against Phil Taylor and Adrian Lewis.",
+    "instance_id": "EN-0210-843-frame-Process_completed_state"
+},
+{
+    "Let me extract the roles from the Source text": "",
+    "Time": "None",
+    "Place": "France",
+    "Event": "the dialogue",
+    "Summary": "During World War I, the dialogue in the movie continues at a casual pace, comparable to fraternity students making weekend plans, despite the film's aerial battle scenes and $17 million budget.",
+    "Note": "I chose this particular span for \"Event\" because it's directly referenced in the event keyword \"rolls along\" and represents what's continuing in this context. The place \"France\" is mentioned as the setting where the main action takes place. There is no specific time period mentioned for the continuation of the dialogue itself, although the story is set in 1917, but that's not specifically when the dialogue continues.",
+    "instance_id": "EN-2533-82-frame-Process_continue"
+},
+{
+    "Let me help extract the roles from the source for the Process_end event indicated by \"end\" in the Report": "",
+    "Process": "1989",
+    "Time": "the end of 1989",
+    "Place": "Italy",
+    "Summary": "Italy introduced the \"Martelli\" law which granted two-year residency permits to immigrants who could prove they had entered the country before the end of 1989, marking the end of unrestricted immigration into Italy.",
+    "instance_id": "EN-2920-17-frame-Process_end"
+},
+{
+    "Let me help you extract the role spans for this Process_start event about the TV miniseries The Looming Tower": "",
+    "Event": "10-episode television miniseries based on the book",
+    "Time": "February 28, 2018",
+    "Place": "Hulu",
+    "Summary": "A 10-episode television miniseries adaptation of The Looming Tower began airing on Hulu on February 28, 2018, featuring a cast including Alec Baldwin, Jeff Daniels, Tahar Rahim, and Peter Sarsgaard.",
+    "instance_id": "EN-0910-46-frame-Process_start"
+},
+{
+    "Let me help analyze this event from the Source document": "",
+    "Process": "11 of the nation's nuclear power reactors",
+    "Time": "1446 local time (0546 GMT)",
+    "Place": "Japan",
+    "Summary": "Following the 8.9-magnitude earthquake off the coast of Honshu island, 11 of Japan's nuclear power reactors, including reactor units 1, 2, and 3 at the Fukushima Daiichi power plant, automatically shut down at 1446 local time on Friday, March 11.",
+    "instance_id": "EN-0241-273-frame-Process_stop"
+},
+{
+    "Set": "life",
+    "Difference": "None",
+    "Final_number": "None",
+    "Initial_number": "None",
+    "Initial_state": "None",
+    "Final_state": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "According to Michel Foucault's theory of biopolitics, life is meant \"to ensure, sustain, and multiply life, to put this life in order\" through political relations between administration and population regulation.",
+    "instance_id": "EN-0669-627-frame-Proliferating_in_number"
+},
+{
+    "Employee": "Scott Frear",
+    "Employer": "University of Saint Mary",
+    "Field": "football",
+    "Position": "coach",
+    "Time": "Aug.16, 2005",
+    "Place": "Leavenworth County",
+    "Summary": "Scott Frear, football coach at the University of Saint Mary in Leavenworth County, resigned on August 16, 2005 amid a federal investigation into child pornography charges, which he later pleaded guilty to and received a thirteen-year prison sentence.",
+    "instance_id": "EN-1702-5-frame-Quitting"
+},
+{
+    "Self_mover": "Ramiro Romo Sr.",
+    "Source": "M\u00fazquiz , Coahuila , Mexico",
+    "Place": "San Antonio , Texas",
+    "Time": "N/A",
+    "Summary": "Ramiro Romo Sr., Tony Romo's paternal grandfather, emigrated from M\u00fazquiz, Coahuila, Mexico to San Antonio, Texas as a teenager, exemplifying what he later described as the opportunities available to immigrants in the United States.",
+    "instance_id": "EN-0958-524-frame-Quitting_a_place"
+},
+{
+    "Let me help break this down": "",
+    "Perpetrator": "six men (four Emiratis and one Iraqi)",
+    "Victim": "LH (a Muslim woman)",
+    "Event": "gang rape",
+    "Time": "May 25, 2010",
+    "Place": "Abu Dhabi",
+    "Summary": "A Muslim woman in Abu Dhabi initially reported being gang-raped by six men, but later recanted her allegations after being threatened with punishment for premarital sex under local morality laws. The case highlighted how UAE's legal system can assign blame to victims of sexual assault, potentially deterring other women from reporting such crimes.",
+    "Note": "Although the victim recanted her allegations, I've included the initially reported perpetrators and event details as they were part of the original report and forensic examination confirmed the assault. The retraction appears to be due to legal pressure rather than the original report being false.",
+    "instance_id": "EN-0615-425-frame-Rape"
+},
+{
+    "Speaker": "Film critic Matt Zoller Seitz",
+    "Experiencer": "white folks",
+    "Message": "takes a subject that some white folks find unpleasant or even troubling to ponder and turns it into a source of gentle reassurance",
+    "Situation": "justifiably resentful black people's status in a country that, 50 years after the start of the modern civil rights struggle, is still run by, and mostly for, whites",
+    "Time": "N/A",
+    "Summary": "Film critic Matt Zoller Seitz explained how the Magical Negro trope serves to reassure white audiences about racial tensions by transforming the uncomfortable reality of black resentment in a white-dominated society into a comforting narrative.",
+    "instance_id": "EN-1728-573-frame-Reassuring"
+},
+{
+    "From the Report, I can identify": "",
+    "Recipient": "potential customer",
+    "Donor": "N/A",
+    "Theme": "messages",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "In drip marketing, potential customers receive a series of timed messages that are specifically tailored to their behavior or status, typically delivered through email marketing or other media channels.",
+    "Note": "While the Source provides much more detailed information about drip marketing, I focused on the event mentioned in the Report as per the instructions. The Report describes a general receiving event where potential customers receive marketing messages, though some specifics like exact time and place are not mentioned.",
+    "instance_id": "EN-2925-230-frame-Receiving"
+},
+{
+    "Entity": "Hebrew language",
+    "Agent": "Bialik",
+    "Cause": "Bialik's experiments in rhyme and meter \u2013he pioneered free verse and prose poetry in Modern Hebrew",
+    "Time": "in the early part of the 20th century",
+    "Place": "Tel Aviv",
+    "Summary": "Bialik played a crucial role in rejuvenating the Hebrew language from its primarily ancient and scholarly form through his pioneering work in Hebrew poetry and literature during the early 20th century in Tel Aviv, where his experiments with rhyme and meter helped establish Modern Hebrew as a living, dynamic language.",
+    "instance_id": "EN-1407-623-frame-Rejuvenation"
+},
+{
+    "Agent": "Gorman",
+    "Theme": "the body",
+    "Source": "Firefly tank",
+    "Time": "None",
+    "Place": "None",
+    "Cause": "one crew member had been decapitated and two others were in shock",
+    "Summary": "During a military operation, Gorman removed a decapitated crew member's body from a Sherman Firefly tank and took command of it after finding two other crew members in shock.",
+    "instance_id": "EN-4997-32-frame-Removing"
+},
+{
+    "Looking at the Report and Source, I can annotate the roles as follows": "",
+    "Agent": "None",
+    "Artifact": "Trident nuclear weapons system",
+    "Cause": "None",
+    "Time": "None",
+    "Place": "None",
+    "Summary": "There was a disagreement regarding the potential disarmament of the Trident nuclear weapons system, with Eagle supporting its renewal while Corbyn advocated for unilateral nuclear disarmament.",
+    "Note": "While the text discusses nuclear disarmament, it's more about policy disagreements rather than an actual disarmament event that has taken place. The spans are limited since this is discussing a potential future disarmament rather than one that has occurred.",
+    "instance_id": "EN-1550-247-frame-Render_nonfunctional"
+},
+{
+    "Lessee": "Tony Quinn",
+    "Goods": "Queensland Raceway",
+    "Time": "October 2021",
+    "Place": "45 minutes southwest of Brisbane",
+    "Summary": "In October 2021, Tony Quinn signed an agreement with former owner John Tetley to take over the lease, management and operations of Queensland Raceway, a racing circuit located 45 minutes southwest of Brisbane.",
+    "instance_id": "EN-2455-628-frame-Renting"
+},
+{
+    "Lessee": "the colonial government",
+    "Lessor": "John Argyle Maxwell",
+    "Goods": "the building",
+    "Time": "1827",
+    "Place": "Singapore",
+    "Summary": "In 1827, merchant John Argyle Maxwell leased his newly built residence (now known as the Arts House at the Old Parliament) to the colonial government in Singapore for 500 Indian rupees monthly over a 15-year period.",
+    "instance_id": "EN-0448-289-frame-Renting_out"
+},
+{
+    "From the Report text alone (since the Source provides different context about a gaming device), I can identify that this is a case of hot-swappable batteries, where": "",
+    "Agent": "N/A",
+    "New": "2 Prismatic Lithium Ion Batteries",
+    "Old": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Note": "While this is technically a \"replacing\" event due to the \"hot swappable\" description, the text doesn't explicitly describe a specific replacement taking place. Instead, it describes the capability of replacing batteries. The text only lists the specifications of the hardware without describing an actual replacement event, so many of the roles can't be filled with specific spans.",
+    "Summary": "The hardware specifications include two Prismatic Lithium Ion Batteries that are hot swappable, meaning they can be replaced while the device is running.",
+    "instance_id": "EN-4376-591-frame-Replacing"
+},
+{
+    "Based on the report and source text": "",
+    "Agent": "a Catholic nun",
+    "Patient": "Mi\u0142osz",
+    "Harmful_situation": "German troops setting fire to Warsaw buildings",
+    "Time": "in August 1944",
+    "Place": "Warsaw",
+    "Asset": "N/A",
+    "Summary": "During the Warsaw Uprising in August 1944, Mi\u0142osz was captured and held in a prisoner transit camp by German forces who were burning Warsaw. He was rescued by an unknown Catholic nun who convinced the German authorities she was his aunt.",
+    "instance_id": "EN-1328-1386-frame-Rescuing"
+},
+{
+    "Deformer": "Zoic",
+    "Patient": "3D pieces of geometry",
+    "Cause": "performance transfer of tracking 2D points",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Configuration": "deform them and warp them",
+    "Summary": "Zoic, a visual effects company, used performance transfer of tracking 2D points to deform and warp 3D pieces of geometry, allowing effects to interact with actors' performances in a natural way.",
+    "instance_id": "EN-4034-791-frame-Reshaping"
+},
+{
+    "Let me analyze the text and extract the relevant roles for the problem-solving event": "",
+    "Agent": "neuropsychological assessment",
+    "Problem": "cognitive functioning",
+    "Cause": "objective , specialized tests",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Neuropsychological assessment helps resolve questions about cognitive functioning through specialized tests that evaluate various mental capacities including problem solving, memory, and executive functions.",
+    "Note": "In this case, neuropsychological assessment serves as the agent that resolves the problem of understanding a patient's cognitive functioning. The cause is the use of specialized tests that enable this resolution. The text doesn't specify any particular time or place for this problem-solving process as it describes a general medical procedure.",
+    "instance_id": "EN-0712-177-frame-Resolve_problem"
+},
+{
+    "Let me help extract the roles and provide a summary based on the source document": "",
+    "Response": "pepper-sprayed",
+    "Responding_entity": "N/A",
+    "Trigger": "protesters moved to enter the Union Avenue station",
+    "Agent": "officers",
+    "Time": "Sunday afternoon",
+    "Place": "New Haven Police Department",
+    "Summary": "Officers at the New Haven Police Department pepper-sprayed protesters who attempted to enter the Union Avenue station during a peaceful protest over George Floyd's death. The same protesters had previously demonstrated outside Mayor Elicker's home without incident.",
+    "Note": "I've chosen the most specific mentions from the source document for each role. The summary highlights the key aspects of the response event, mentioning both the peaceful nature of the protest before the response and providing context about previous demonstrations by the same group.",
+    "instance_id": "EN-0615-303-frame-Response"
+},
+{
+    "Let me analyze the Revenge event from the report and source": "",
+    "Avenger": "CONCORD",
+    "Offender": "players breaking the law",
+    "Punishment": "destroy player ships that carry out any aggressive actions",
+    "Injury": "illegal aggression in high-sec",
+    "Injured_party": "innocent player",
+    "Time": "N/A",
+    "Place": "high security space",
+    "Summary": "CONCORD, acting as an NPC space police force, exacts revenge on players who commit illegal aggressive actions in high security space by destroying their ships, serving as an unstoppable enforcement mechanism to punish criminal activity.",
+    "instance_id": "EN-0616-367-frame-Revenge"
+},
+{
+    "Let me help you with the role annotations for this punishment event": "",
+    "Agent": "Bombay High Court",
+    "Evaluee": "Akashaditya Lama",
+    "Reason": "putting false allegations and harassing makers of the film",
+    "Response_action": "imposed exemplary and punitive costs of Rs. 1,50,000",
+    "Time": "3 August 2016",
+    "Place": "N/A",
+    "Summary": "The Bombay High Court imposed punitive costs of Rs. 1,50,000 on Akashaditya Lama for making false allegations that director Ashutosh Gowariker had stolen his script for Mohenjo Daro and for harassing the film's makers through media interviews and social media posts.",
+    "instance_id": "EN-1431-87-frame-Rewards_and_punishments"
+},
+{
+    "Patient": "his Achilles tendon",
+    "Time": "Oct. 19",
+    "Place": "N/A",
+    "Summary": "During surgery on October 19, Galen Rupp's Achilles tendon was found to be fraying due to Haglund's Deformity, with the tendon having partially torn in two places.",
+    "Note": "I chose \"his Achilles tendon\" as the Patient since it's the organic substance undergoing decay (fraying). The Time is clearly stated as \"Oct. 19\". There is no specific mention of where the decay/fraying occurred, so Place is marked as N/A.",
+    "instance_id": "EN-2439-908-frame-Rotting"
+},
+{
+    "Cognizer_agent": "managers from the company",
+    "Sought_entity": "new premises",
+    "Time": "Six months ago",
+    "Place": "Hull",
+    "Summary": "Six months ago, managers from Boyes company were looking for new premises in Hull to save jobs after failing to agree on lease terms for their Bransholme store, though they ultimately managed to secure a new lease for the existing location while also opening an additional store in Whitefriargate.",
+    "instance_id": "EN-1031-9-frame-Seeking"
+},
+{
+    "Agent": "George Smitherman",
+    "Sought_entity": "None",
+    "State_of_affairs": "the Liberal Party of Canada's nomination for a federal by-election in Toronto Centre",
+    "Time": "July 29, 2013",
+    "Place": "Toronto Centre",
+    "Summary": "George Smitherman considered seeking the Liberal Party of Canada's nomination for a federal by-election in Toronto Centre but announced on July 29, 2013, that he would not be a candidate, choosing instead to focus on family, fun, and finances.",
+    "instance_id": "EN-2676-246-frame-Seeking_to_achieve"
+},
+{
+    "Let me help break down the Self_motion event roles from the Source document": "",
+    "Self_mover": "runners",
+    "Source": "N/A",
+    "Path": "N/A",
+    "Goal": "marathon distance",
+    "Area": "N/A",
+    "Direction": "N/A",
+    "Time": "by June 15",
+    "Place": "N/A",
+    "Summary": "Due to COVID-19, runners had the option to complete their marathon distance virtually by June 15 as part of the cancelled 2020 Saskatchewan Marathon, in order to receive a t-shirt and medal.",
+    "instance_id": "EN-5392-5-frame-Self_motion"
+},
+{
+    "Whole": "Warwickshire",
+    "Parts": "two unitary authorities",
+    "Part_1": "north of the county , covering the current districts of North Warwickshire , Nuneaton and Bedworth and Rugby",
+    "Part_2": "south of the county , covering Warwick and Stratford districts",
+    "Agent": "district and borough councils",
+    "Time": "N/A",
+    "Place": "Warwickshire",
+    "Cause": "N/A",
+    "Summary": "The district and borough councils of Warwickshire proposed splitting the county into two unitary authorities: one covering the northern districts (North Warwickshire, Nuneaton and Bedworth, and Rugby) and another covering the southern districts (Warwick and Stratford), in response to Warwickshire County Council's proposal for a single county-wide authority.",
+    "instance_id": "EN-2593-709-frame-Separating"
+},
+{
+    "Based on the source document, here are the role annotations": "",
+    "Kindler": "farmers and plantation owners (implied from \"fires started with the intention to clear forest\")",
+    "Flame": "fires",
+    "Flammables": "tropical peatlands",
+    "Cause": "clearance and drainage for timber, oil palm or rice plantations, and subsistence farming",
+    "Time": "N/A (multiple incidents mentioned but no specific time)",
+    "Place": "South-East Asia",
+    "Summary": "Fires are deliberately started in South-East Asia to clear forest for plantations and farming, but these fires often burn out of control and ignite tropical peatlands, which contain up to 21% of global land-based carbon stores, releasing massive amounts of carbon dioxide into the atmosphere.",
+    "instance_id": "EN-1214-574-frame-Setting_fire"
+},
+{
+    "Let me extract the roles from the Source document regarding the Setting_out event mentioned in the Report": "",
+    "Self_mover": "Michael Johnson",
+    "Source": "Denver, Colorado",
+    "Time": "in 1966",
+    "Place": "Barcelona, Spain",
+    "Summary": "In 1966, Michael Johnson traveled from Denver to Barcelona, Spain to study guitar technique under maestros Graciano and Renata Tarrago at a conservatory.",
+    "instance_id": "EN-0209-584-frame-Setting_out"
+},
+{
+    "Let me extract the roles from the source document": "",
+    "Projectile": "Scud missile",
+    "Agent": "Military forces loyal to Libyan leader Col Muammar Gaddafi",
+    "Time": "Sunday morning",
+    "Place": "near the coastal city of Sirte",
+    "Summary": "Military forces loyal to Gaddafi fired a Scud missile from near Sirte towards Brega during Libya's six-month conflict, but the missile landed harmlessly in the desert about 80 km outside of Brega.",
+    "instance_id": "EN-2525-582-frame-Shoot_projectiles"
+},
+{
+    "Let me help annotate the roles for the Shopping event based on the given documents": "",
+    "Shopper": "N/A (no specific shopper mentioned)",
+    "Goods": "N/A (no specific goods mentioned)",
+    "Time": "Black Friday",
+    "Place": "South Park Mall in south Charlotte",
+    "Summary": "South Park Mall in south Charlotte experiences the most severe shopping congestion in the United States during Black Friday, with traffic slowing by more than 25 miles per hour compared to regular December weekends.",
+    "instance_id": "EN-1277-1054-frame-Shopping"
+},
+{
+    "Let me extract the roles from the given text": "",
+    "Signatory": "Cherno Samba",
+    "Signature": "put pen to paper",
+    "Agreement": "a two year \"lucrative\" contract with Greek Second Division side Panetolikos FC",
+    "Time": "February 2010",
+    "Place": "Greece",
+    "Summary": "Cherno Samba signed a two-year lucrative contract with Greek Second Division club Panetolikos FC in February 2010, after unsuccessful trials with several English clubs including Portsmouth and Blackburn Rovers.",
+    "instance_id": "EN-4027-537-frame-Sign_agreement"
+},
+{
+    "Let me extract the role spans from the Report and Source": "",
+    "1. Agent": "\"staff\"",
+    "2. Speaker": "\"the animals\"",
+    "3. Expressor": "N/A",
+    "4. Time": "\"opening day in May 2019\"",
+    "5. Place": "\"the deer enclosure\"",
+    "Summary": "During Marineland's opening day in May 2019, staff had to quiet down animals in the deer enclosure following a stampede allegedly caused by a father and son, which resulted in the death of two deer.",
+    "instance_id": "EN-0710-445-frame-Silencing"
+},
+{
+    "Based on the text, here are the role extractions": "",
+    "Perpetrator": "opium-smugglers",
+    "Goods": "opium",
+    "Source": "N/A",
+    "Path": "N/A",
+    "Goal": "China",
+    "Time": "N/A",
+    "Place": "Chinese coast",
+    "Summary": "The text describes a situation where opium-smugglers were attempting to illegally bring opium into China, leading to a conflict known as the First Opium War (1839-1842), with the British government supporting the smugglers' demands for compensation after China destroyed their illegal goods.",
+    "instance_id": "EN-2969-1086-frame-Smuggling"
+},
+{
+    "Based on the Report text, here are the role annotations": "",
+    "Agent": "N/A",
+    "Theme": "the meat",
+    "Medium": "cool water",
+    "Time": "an hour or more",
+    "Place": "on a rack or board",
+    "Summary": "The meat is soaked in cool water and drained, then covered with salt and placed on a rack for an hour or more, allowing the meat to be brined in its own juices while the salt absorbs and reabsorbs the fluids along with added flavors.",
+    "instance_id": "EN-2994-3-frame-Soaking"
+},
+{
+    "Let me analyze this for the State_of_entity event with the roles": "",
+    "Entity": "drift eliminators",
+    "State": "gaps to allow free flow of dirt",
+    "Summary": "The condition of drift eliminators in cooling towers should be inspected semi-annually to ensure there are no gaps that would allow dirt to flow freely, as proper maintenance is crucial for reducing water loss and preventing Legionella exposure.",
+    "instance_id": "EN-0058-474-frame-State_of_entity"
+},
+{
+    "Addressee": "Clifford I. Miller",
+    "Speaker": "Arthur B. Harrison",
+    "Content": "that a plant producing his materials could be a profitable venture",
+    "Text": "N/A",
+    "Topic": "waterproofing materials",
+    "Time": "1904",
+    "Place": "New York City",
+    "Summary": "In 1904, Arthur B. Harrison successfully persuaded his employer Clifford I. Miller that manufacturing waterproofing materials would be a profitable venture, leading to Miller's agreement and the eventual founding of what would become the Minwax Company.",
+    "instance_id": "EN-1484-1242-frame-Suasion"
+},
+{
+    "Let me help break this down": "",
+    "Submittor": "Kate Espey (mentioned as the winner)",
+    "Authority": "Saundra Mitchell (the anthology's editor and judge)",
+    "Documents": "1242 stories",
+    "Time": "None (specific submission time not mentioned)",
+    "Place": "None (submission place not mentioned)",
+    "Summary": "1242 stories totaling 3.35 million words were submitted to the DEFY THE DARK contest, which was judged by anthology editor Saundra Mitchell, with Kate Espey's \"The Sunflower Murders\" emerging as the winner.",
+    "instance_id": "EN-3062-259-frame-Submitting_documents"
+},
+{
+    "Entity": "about 42 percent of the country's estimated 27 million people",
+    "Support": "less than $ 1 a day",
+    "Summary": "About 42 percent of Afghanistan's population of 27 million people subsist on less than $1 a day, facing significant challenges in affording adequate food despite recent drops in prices of basic commodities like wheat flour, rice, and cooking oil.",
+    "instance_id": "EN-0302-703-frame-Subsisting"
+},
+{
+    "Based on the Report and Source provided, I can identify the following role spans for a suicide bombing event": "",
+    "Victim": "U.S. Embassy in Beirut",
+    "Assailant": "Hezbollah operatives",
+    "Time": "April 18, 1983",
+    "Place": "Beirut, Lebanon",
+    "Summary": "On April 18, 1983, Hezbollah operatives carried out a suicide bombing attack on the U.S. Embassy in Beirut, Lebanon, killing 63 people including 17 Americans, with 8 of them being CIA employees.",
+    "instance_id": "EN-2754-967-frame-Suicide_attack"
+},
+{
+    "Let me extract the roles from the source document": "",
+    "Communicator": "Richard Corliss",
+    "State_of_affairs": "\"Attacks on journalists were widespread\"",
+    "Medium": "Time",
+    "Time": "\"8 September 2009\"",
+    "Place": "N/A",
+    "Summary": "Time journalist Richard Corliss reported on Amnesty International's findings about widespread attacks on journalists in Venezuela, as part of his review of Oliver Stone's documentary \"South of the Border\" published on September 8, 2009.",
+    "instance_id": "EN-1411-683-frame-Summarizing"
+},
+{
+    "Let me help analyze this Supply event from the documents": "",
+    "Supplier": "Access Copyright",
+    "Recipient": "300 schools across Canada",
+    "Theme": "handouts and lesson plans from the last seven years",
+    "Imposed_purpose": "to determine how they use copyrighted material",
+    "Time": "late 2019",
+    "Place": "across Canada",
+    "Summary": "In late 2019, Access Copyright obtained a court order requiring 300 schools across Canada to supply their handouts and lesson plans from the previous seven years to determine how they use copyrighted material, as part of an ongoing copyright lawsuit between provinces and publishers.",
+    "instance_id": "EN-4096-11-frame-Supply"
+},
+{
+    "Supporter": "Brent Oxley",
+    "Supported": "\"unlimited\" hosting service",
+    "Time": "in 2008",
+    "Place": "Host Gator",
+    "Summary": "In 2008, Host Gator's founder Brent Oxley prepared to support \"unlimited\" hosting services by increasing staffing and ensuring the company could properly back up such offerings before launching them.",
+    "instance_id": "EN-3044-19-frame-Supporting"
+},
+{
+    "Based on the given documents, here are the role annotations": "",
+    "1. Surrenderer": "estates forfeited by English Jacobites",
+    "2. Recipient": "the Crown",
+    "3. Theme": "estates",
+    "4. Time": "1716",
+    "5. Place": "N/A",
+    "Summary": "During the aftermath of the unsuccessful Jacobite rising of 1715, estates belonging to English Jacobites were forfeited to the Crown in 1716, with John Eyles being appointed as one of the commissioners to oversee these forfeitures until 1725.",
+    "instance_id": "EN-1549-372-frame-Surrendering_possession"
+},
+{
+    "Agent": "federal agents",
+    "Theme": "8,000 to 10,000 copies of his yet-to-be released documentary",
+    "Source": "Spectrum Labs",
+    "Time": "May 7, 2008",
+    "Place": "Newport, Ky.",
+    "Summary": "On May 7, 2008, federal agents raided Spectrum Labs in Newport, Ky., seizing 8,000 to 10,000 copies of Tommy Chong's documentary as part of an investigation related to drug masking products, though Chong claims the documentary was the real target of the raid.",
+    "instance_id": "EN-2414-395-frame-Taking"
+},
+{
+    "1. Speaker": "The Lawyers' Committee for Civil Rights Under Law",
+    "2. Content": "to enforce its Terms of Service agreement which prohibits users from using its services to incite violence",
+    "3. Addressee": "Network Solutions",
+    "4. Place": "N/A",
+    "Summary": "The Lawyers' Committee for Civil Rights Under Law successfully advocated for Network Solutions to take down Stormfront, the internet's oldest white supremacist site, by enforcing its Terms of Service agreement that prohibits inciting violence, resulting in the seizure of its domain name in August 2017.",
+    "instance_id": "EN-7015-810-frame-Talking_into"
+},
+{
+    "Guest": "Tak Matsumoto and Koshi Inaba",
+    "Location": "Hawaii",
+    "Duration": "N/A",
+    "Host": "N/A",
+    "Time": "after Christmas",
+    "Place": "Hawaii",
+    "Summary": "After their twentieth anniversary tour in 2008, B'z members Tak Matsumoto and Koshi Inaba took a break in Hawaii, where Matsumoto played golf every day and Inaba spent his mornings surfing and afternoons relaxing.",
+    "instance_id": "EN-0875-184-frame-Temporary_stay"
+},
+{
+    "Let me extract the relevant roles from the Source document": "",
+    "Author": "Steve Seskin",
+    "Text": "songs about respect",
+    "Time": "Sept. 13",
+    "Place": "Park City School District",
+    "Summary": "Award-winning songwriter Steve Seskin works with students at Park City School District schools to create songs about respect, bullying, and being good community members, culminating in a free concert at the Eccles Center for the Performing Arts where students will perform their collaborative works.",
+    "instance_id": "EN-0221-118-frame-Text_creation"
+},
+{
+    "Based on the source document, here are the role spans": "",
+    "Perpetrator": "N/A",
+    "Victim": "a counselor",
+    "Goods": "her doughnuts",
+    "Source": "Camp Scott",
+    "Time": "less than two months before the murders",
+    "Place": "in the camp's Seminole unit",
+    "Summary": "Less than two months before the murders at Camp Scott, a counselor discovered her belongings had been ransacked and her doughnuts stolen during a pre-summer preparatory session, with a threatening note left behind promising to kill three girls in tent one.",
+    "instance_id": "EN-1040-155-frame-Theft"
+},
+{
+    "Entity": "the child",
+    "Desirability": "health and wellbeing",
+    "Time": "when a child is born",
+    "Place": "west Africa",
+    "Summary": "The Oubangui people of west Africa have a tradition where they plant a tree at a child's birth, with the child's health and wellbeing being symbolically linked to the tree's growth and flourishing.",
+    "instance_id": "EN-1316-235-frame-Thriving"
+},
+{
+    "Recipient": "the City of Sydney",
+    "Theme": "Potts Point , Elizabeth Bay , Kings Cross , Darlinghurst , Chippendale , Ultimo , and parts of Rushcutters Bay , Camperdown and Darlington",
+    "Donor": "South Sydney",
+    "Time": "2003",
+    "Place": "N/A",
+    "Transferors": "N/A",
+    "Summary": "In 2003, several areas including Potts Point, Elizabeth Bay, Kings Cross, and others were transferred from South Sydney to the City of Sydney as part of a municipal boundary reorganization.",
+    "instance_id": "EN-1015-619-frame-Transfer"
+},
+{
+    "Entity": "I-16s midget submarine",
+    "Final_quality": "missing, presumed sunk",
+    "Time": "None",
+    "Place": "along the coast",
+    "Summary": "The I-16s midget submarine went missing and was presumed sunk during a military operation, while another submarine, the I-20s, beached along the coast where its two crew members were killed in a firefight with Royal Marines.",
+    "instance_id": "EN-3009-679-frame-Transition_to_a_quality"
+},
+{
+    "Based on the Report and Source, here are the role annotations": "",
+    "Cognizer": "Taiji Kawakami",
+    "Source_symbol": "kanji",
+    "Source_representation": "Japanese logographic writing system",
+    "Target_symbol": "kantenji",
+    "Target_representation": "eight-dot code",
+    "Content": "Japanese Kanji, the Chinese characters that are used in the modern Japanese logographic writing system",
+    "Time": "in the 1950's",
+    "Place": "Osaka",
+    "Summary": "In the 1950's, Taiji Kawakami, a teacher at a school for the blind in Osaka, developed kantenji, an eight-dot code system to transcribe Japanese kanji characters, using the upper two dots to indicate kanji and constructing characters to reflect the visual appearance of the original kanji in two or three cells.",
+    "instance_id": "EN-2851-1031-frame-Translating"
+},
+{
+    "Let me help you with the role annotation for the last example about the monorail fire": "",
+    "Rider": "150 people",
+    "Summary": "A fire broke out on the Seattle monorail's blue train while carrying 150 passengers, caused by an electrical short in the motor wiring, resulting in eight minor injuries and requiring emergency evacuation.",
+    "Note": "I used the number \"150 people\" from the Report, though the Source suggests it might have been closer to 100. Since we should prefer the Report when there's a conflict, and following the instruction to use the most informative span, I chose \"150 people\" as the Rider role.",
+    "instance_id": "EN-1182-469-frame-Transportation_status"
+},
+{
+    "Based on the Report and Source documents, here are the role annotations for the Traversing event": "",
+    "Theme": "\"the remnants of the storm\"",
+    "Source": "N/A",
+    "Path": "\"a slow , counter - clockwise loop\"",
+    "Goal": "\"the Bering Sea\"",
+    "Distance": "N/A",
+    "Area": "N/A",
+    "Path_shape": "\"counter - clockwise loop\"",
+    "Direction": "N/A",
+    "Time": "\"August 13\"",
+    "Place": "N/A",
+    "Summary": "The remnants of the storm executed a counter-clockwise loop until August 12, before crossing the International Date Line on August 13 and being absorbed by a large non-tropical low over the Bering Sea.",
+    "instance_id": "EN-2377-836-frame-Traversing"
+},
+{
+    "Based on the text, here are the role annotations and summary": "",
+    "1. Entity": "Markets in the Balad",
+    "2. Final_category": "\"popular markets\"",
+    "3. Initial_category": "central markets",
+    "4. Initial_quality": "trafficked by Ammanis of all stripes",
+    "5. Final_quality": "N/A",
+    "6. Attribute": "demographic composition of market visitors",
+    "7. Value_range": "N/A",
+    "8. Final_situation": "frequented by a different demographic",
+    "9. Initial_situation": "trafficked by Ammanis of all stripes throughout most of the 20th century",
+    "10. Time": "throughout most of the 20th century",
+    "11. Place": "Balad",
+    "Summary": "The markets in the Balad of Amman underwent a significant demographic transformation, changing from central markets frequented by all social classes throughout most of the 20th century to being labeled as \"popular markets\", reflecting a shift in the type of people visiting these commercial spaces.",
+    "instance_id": "EN-2660-130-frame-Undergo_change"
+},
+{
+    "Entity": "sales of Hanes / L'eggs hosiery",
+    "Initial_category": "N/A",
+    "Final_category": "emphasizing their higher - priced products",
+    "Time": "mid-1996",
+    "Place": "N/A",
+    "Summary": "In mid-1996, Hanes/L'eggs hosiery transformed their business strategy in response to a 9% sales drop, shifting their focus to higher-priced products targeting conservative market segments that still required formal business attire.",
+    "instance_id": "EN-0213-433-frame-Undergo_transformation"
+},
+{
+    "Entity": "Mohamed Ibrahim Egal",
+    "Event": "surgery",
+    "Time": "on Friday",
+    "Place": "at a military hospital in South Africa",
+    "Summary": "Mohamed Ibrahim Egal, the president of Somaliland, died while undergoing surgery at a military hospital in South Africa on Friday, after which his body was returned home and buried by his three sons next to his father in Berbera.",
+    "instance_id": "EN-1104-100-frame-Undergoing"
+},
+{
+    "Based on the text provided, here are the role annotations for the Use_firearm event": "",
+    "Agent": "the Germans",
+    "Firearm": "N/A",
+    "Time": "on 6 September 1944",
+    "Place": "at Mauthausen",
+    "Summary": "Captain Isidore Newman, along with 45 other agents, was shot by the Germans at Mauthausen concentration camp on September 6, 1944, following his arrest by the Gestapo and subsequent transfer to the camp.",
+    "instance_id": "EN-1483-751-frame-Use_firearm"
+},
+{
+    "Based on the source document, I can identify the following role spans": "",
+    "Agent": "\"Victoria Gilman of Chemical & Engineering News\"",
+    "Purpose": "\"criticized the lack of balance in the film\"",
+    "Instrument": "\"genetic engineering\"",
+    "Role": "N/A",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "Victoria Gilman of Chemical & Engineering News criticized the film's lack of balance regarding genetic engineering, particularly in relation to how Garcia portrayed farmers being prevented from growing non-GMO canola, despite canola itself being a product of genetic modification techniques.",
+    "instance_id": "EN-1084-7-frame-Using"
+},
+{
+    "Vehicle": "Apollo 12 crewmates Charles \"Pete\" Conrad and Alan Bean",
+    "Goal": "within walking distance of the Surveyor 3 spacecraft",
+    "Time": "Nov. 19, 1969",
+    "Place": "the moon",
+    "Summary": "On November 19, 1969, Apollo 12 astronauts Charles \"Pete\" Conrad and Alan Bean achieved the first precise lunar touchdown, landing within walking distance of the Surveyor 3 spacecraft on the moon. During their mission, they collected various parts from the Surveyor 3 probe, including its camera and other hardware, which were returned to Earth for scientific study.",
+    "instance_id": "EN-5069-604-frame-Vehicle_landing"
+},
+{
+    "Let me help annotate the roles for this visiting event based on the Source document": "",
+    "1. Agent": "Louis Brisette",
+    "2. Entity": "Claudia Schiffer's mansion",
+    "3. Time": "last week",
+    "4. Place": "near Bury St Edmunds",
+    "Summary": "Louis Brisette, a 21-year-old Canadian man, made three unauthorized visits to Claudia Schiffer's mansion near Bury St Edmunds last week, leading to his arrest and subsequent deportation for being in the country illegally.",
+    "instance_id": "EN-2767-28-frame-Visiting"
+},
+{
+    "Sleeper": "Mackenzie Phillips",
+    "Sleep_state": "blackout",
+    "Time": "on the night before her first wedding in 1979",
+    "Place": "N/A",
+    "Summary": "Mackenzie Phillips woke up from a blackout on the night before her first wedding in 1979 to find herself being sexually assaulted by her father, John Phillips, which later developed into a long-term abusive relationship.",
+    "instance_id": "EN-5043-2787-frame-Waking_up"
+},
+{
+    "Let me extract the roles from the source document about the USS Essex's relief work": "",
+    "Agent": "USS Essex with 2,200 members of the 31st Marine Expeditionary Unit",
+    "Goal": "transporting fuel and materials to the disaster areas",
+    "Salient_entity": "three U.S. naval vessels",
+    "Time": "March 11",
+    "Place": "in the Sea of Japan off Akita Prefecture",
+    "Summary": "The USS Essex, along with two other naval vessels and 2,200 members of the 31st Marine Expeditionary Unit, conducted relief operations in the Sea of Japan off Akita Prefecture following the March 11 earthquake and tsunami, focusing on transporting fuel and materials to disaster areas.",
+    "instance_id": "EN-3017-86-frame-Work"
+},
+{
+    "Let me extract the relevant roles from the source": "",
+    "Agent": "either a human or AI",
+    "Post": "each station",
+    "Salient_entity": "The interiors of each tank",
+    "Time": "N/A",
+    "Place": "N/A",
+    "Summary": "The interiors of each tank feature stations that can be operated by either human players or AI crew members, with a level of detail that rivals tank simulation games.",
+    "Note": "The source document provides much more detail about the tank simulation system, but since we're specifically looking at the event mentioned in the Report about manning stations, I've focused on extracting the relevant spans from the Report text only.",
+    "instance_id": "EN-7382-240-frame-Working_a_post"
+}]

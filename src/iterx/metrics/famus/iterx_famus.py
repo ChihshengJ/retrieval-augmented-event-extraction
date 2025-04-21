@@ -8,8 +8,8 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from allennlp.training.metrics import Metric
 from overrides import overrides
 
-from iterx.metrics.famus.gtt_eval_utils import read_gold_templates, add_normalized_templates
-from iterx.metrics.famus.ceaf_rme import generate_scoring_structures, IterXTemplate, SCORER_CONSTRUCTOR
+from src.iterx.metrics.famus.gtt_eval_utils import read_gold_templates, add_normalized_templates
+from src.iterx.metrics.famus.ceaf_rme import generate_scoring_structures, IterXTemplate, SCORER_CONSTRUCTOR
 
 logger = logging.getLogger('iterx_famus')
 
@@ -105,6 +105,7 @@ class IterXFAMuSMetric(Metric):
             "iterx_famus_slot_f1": f1
         }
 
+
 # Utility functions for FAMuS metric
 def compute_ceafe_rme_scores(gold_file, predictions,
                              ignore_no_template_doc=False ,
@@ -119,6 +120,7 @@ def compute_ceafe_rme_scores(gold_file, predictions,
                 gold_file,
                 normalize_role = False)
     return iterx_famus.get_metric(reset=True)['iterx_famus_slot_f1']
+
 
 def convert_gold_iterx_dict_to_jsonl_file(gold_data_dict, 
                                           output_file="temp_gold_data_can_be_deleted.jsonl"):
@@ -139,7 +141,6 @@ def out_compute_ceafe_rme_scores(gold_predictions: Union[str, Dict],
                                 ignore_no_template_doc =False ,
                                 sanitize_special_chars= False,
                                 metrics = ('CEAF_RME_phi-3', 'CEAF_RME_phi-a')):
-                                
     # If gold_predictions is a iterx formatted jsonl file itself, process it as it is
     if isinstance(gold_predictions, str):
         temp_gold_file = gold_predictions
@@ -155,7 +156,6 @@ def out_compute_ceafe_rme_scores(gold_predictions: Union[str, Dict],
     iterx_famus(predictions, 
             temp_gold_file,
             normalize_role = False)
-    
     exact_match_dict = iterx_famus.get_metric(reset=True)
 
     # Soft Match
@@ -167,7 +167,6 @@ def out_compute_ceafe_rme_scores(gold_predictions: Union[str, Dict],
                 temp_gold_file,
                 normalize_role = False)
     soft_match_dict = iterx_famus.get_metric(reset=True)
-
 
     # Get a dataframe
     metric_rows = []
@@ -187,6 +186,4 @@ def out_compute_ceafe_rme_scores(gold_predictions: Union[str, Dict],
          'F1': round(100*soft_match_dict['iterx_famus_slot_f1'],2)
          }
         metric_rows.append(current_row)
-        
-    
     return pd.DataFrame(metric_rows)
